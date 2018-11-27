@@ -1,0 +1,4 @@
+#Sun Jan 28 14:33:33 BRST 2018
+base.0=/home/ads/AndroidStudioProjects/Tcc2/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
