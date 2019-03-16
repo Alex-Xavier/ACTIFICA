@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FFF"
+    backgroundColor: "#FFFFFF"
   },
   welcome: {
     fontSize: 20,
     textAlign: "center",
     margin: 10,
-    color: "#8B008B",
+    color: "#9d0229",
     fontWeight: "bold"
   }
 });
