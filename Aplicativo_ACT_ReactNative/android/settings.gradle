@@ -1,0 +1,3 @@
+rootProject.name = 'Aplicativo_ACT_ReactNative'
+
+include ':app'
