@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "505114621287",
+    "firebase_url": "https://aplicativo-act.firebaseio.com",
+    "project_id": "aplicativo-act",
+    "storage_bucket": "aplicativo-act.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505114621287:android:45dd0a6ed4a36ae6",
+        "android_client_info": {
+          "package_name": "com.aplicativo_act_reactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505114621287-i9vjbm4ija4irtr7ms81dm8l1thn3hil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVBjpUUYzkdbrMPvdsuJQis_v9VVGlI_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
