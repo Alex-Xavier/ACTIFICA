@@ -1,7 +1,19 @@
 import React, {Component} from 'react';
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import {
+  StatusBar,
+  StyleSheet,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity
+} from 'react-native';
 
 export default class App extends Component {
+  state = {
+    email: '',
+    password: '',
+  };
+  
   render() {
     return (
       <View style={styles.container}>
@@ -9,7 +21,25 @@ export default class App extends Component {
           barStyle="light-content"
           backgroundColor={styles.container.backgroundColor}
         />
-        <Text style={styles.welcome}>Bem vindo ao ACT!</Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder="Digite seu e-mail"
+          value={this.state.email}
+          onChangeText={email => this.setState({ email })}
+        />
+
+        <TextInput
+          style={styles.input}
+          placeholder="Digite sua senha"
+          secureTextEntry={true}
+          value={this.state.password}
+          onChangeText={password => this.setState({ password })}
+        />
+
+        <TouchableOpacity style={style.button} onPress={() => {}}>
+          <Text style={styles.buttonText}>Entrar</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -20,13 +50,28 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF",
+    padding: 20
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10,
-    color: "#7d253b",
+  button: {
+    height: 45,
+    backgroundColor: "#7d253b",
+    alignSelf: "stretch",
+    paddingHorizontal: 20,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  buttonText: {
+    color: "#000000",
     fontWeight: "bold"
+  },
+  input: {
+    height: 45,
+    backgroundColor: "#FFF",
+    alignSelf: "stretch",
+    borderColor: "EEE",
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    marginBotton: 10
   }
 });
