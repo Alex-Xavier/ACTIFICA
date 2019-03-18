@@ -8,7 +8,6 @@ import {
   TouchableOpacity
 } from 'react-native';
 import firebase from "react-native-firebase";
-import console from require("console");
 
 export default class App extends Component {
   state = {
