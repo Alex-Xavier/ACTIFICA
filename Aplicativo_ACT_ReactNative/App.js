@@ -51,7 +51,7 @@ export default class App extends Component {
           onChangeText={password => this.setState({ password })}
         />
 
-        <TouchableOpacity style={style.button} onPress={this.login}>
+        <TouchableOpacity style={styles.button} onPress={this.login}>
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
 
