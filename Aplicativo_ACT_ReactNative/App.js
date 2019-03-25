@@ -57,11 +57,18 @@ export default class App extends Component {
 
         { this.state.isAuthenticated ? <Text>Logado com sucesso!</Text> : null}
       </View>*/
+      
       <View style={styles.container}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={styles.container.backgroundColor}
         />
+        <View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
       </View>
     );
   }
@@ -75,6 +82,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     padding: 20
   },
+  box: {
+    height: 100,
+    width: 100,
+    backgroundColor: "#FFF",
+    borderColor: "#7d253b",
+    borderWidth: 5,
+    margin: 10
+  }
   /*button: {
     height: 45,
     backgroundColor: "#7d253b",
