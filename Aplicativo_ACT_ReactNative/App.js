@@ -3,14 +3,14 @@ import {
   StatusBar,
   StyleSheet,
   View,
-  Text,
-  TextInput,
-  TouchableOpacity
+  //Text,
+  //TextInput,
+  //TouchableOpacity
 } from 'react-native';
-import firebase from "react-native-firebase";
+//import firebase from "react-native-firebase";
 
 export default class App extends Component {
-  state = {
+  /*state = {
     email: '',
     password: '',
     isAuthenticated: false
@@ -26,11 +26,11 @@ export default class App extends Component {
     } catch (err) {
       console.log(err);
     }
-  }
+  }*/
   
   render() {
     return (
-      <View style={styles.container}>
+      /*<View style={styles.container}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={styles.container.backgroundColor}
@@ -56,6 +56,12 @@ export default class App extends Component {
         </TouchableOpacity>
 
         { this.state.isAuthenticated ? <Text>Logado com sucesso!</Text> : null}
+      </View>*/
+      <View style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={styles.container.backgroundColor}
+        />
       </View>
     );
   }
@@ -69,7 +75,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     padding: 20
   },
-  button: {
+  /*button: {
     height: 45,
     backgroundColor: "#7d253b",
     alignSelf: "stretch",
@@ -89,5 +95,5 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     paddingHorizontal: 20,
     marginBottom: 10
-  }
+  }*/
 });
