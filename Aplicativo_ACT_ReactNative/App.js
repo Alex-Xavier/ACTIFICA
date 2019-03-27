@@ -61,7 +61,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <StatusBar
           barStyle="light-content"
-          backgroundColor={styles.container.backgroundColor}
+          backgroundColor={styles.box.borderColor}
         />
         <View style={styles.box} />
         <View style={styles.box} />
@@ -77,17 +77,20 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "center",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#FFF",
     padding: 20
   },
   box: {
-    height: 100,
-    width: 100,
+    height: 135,
+    width: 135,
     backgroundColor: "#FFF",
     borderColor: "#7d253b",
-    borderWidth: 5,
+    borderWidth: 0.5,
     margin: 10
   }
   /*button: {
