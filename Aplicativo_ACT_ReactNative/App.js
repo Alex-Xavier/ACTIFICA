@@ -11,7 +11,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <StatusBar
           barStyle="light-content"
-          backgroundColor={styles.box.borderColor}
+          backgroundColor="#7d253b"
         />
       </View>
     );
