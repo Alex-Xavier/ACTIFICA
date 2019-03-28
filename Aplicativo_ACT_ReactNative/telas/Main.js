@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {
   StatusBar,
   StyleSheet,
-  View,
+  View
 } from 'react-native';
 
 export default class App extends Component {
