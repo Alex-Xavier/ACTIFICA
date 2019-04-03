@@ -1,27 +1,3 @@
-import React, {Component} from 'react';
-import {
-  StatusBar,
-  StyleSheet,
-  View
-} from 'react-native';
+import main from "./screens/main";
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor="#7d253b"
-        />
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFF",
-    padding: 20
-  }
-});
+export default main;
