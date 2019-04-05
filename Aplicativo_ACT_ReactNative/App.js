@@ -1,3 +1,13 @@
+import {createAppContainer , createStackNavigator} from 'react-navigation';
+
 import main from "./screens/main";
 
-export default main;
+const AppNavigator = createStackNavigator ({
+  "main": {
+    screen: main
+  }
+});
+
+const AppContainer = createAppContainer(AppNavigator);
+
+export default AppContainer;
