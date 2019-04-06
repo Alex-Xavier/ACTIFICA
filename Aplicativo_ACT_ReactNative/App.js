@@ -1,10 +1,10 @@
 import {createAppContainer , createStackNavigator} from 'react-navigation';
 
-import Main from "./screens/Main";
+import MainScreen from './source/screens/MainScreen';
 
 const AppNavigator = createStackNavigator ({
-  "Main": {
-    screen: Main
+  'Main': {
+    screen: MainScreen
   }
 });
 
