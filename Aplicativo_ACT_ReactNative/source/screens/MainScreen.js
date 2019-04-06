@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
 
-export default class main {
+export default class MainScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
