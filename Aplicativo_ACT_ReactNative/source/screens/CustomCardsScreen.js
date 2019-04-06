@@ -1,8 +1,7 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
-//import { Container } from './styles';
 
-export default class customCards {
+export default class CustomCards extends React.Component {
     render() {
       return (
         <View style={styles.container}>
