@@ -1,4 +1,4 @@
-/*import React, {Component} from 'react';
+/*import React from 'react';
 import {
   StatusBar,
   StyleSheet,
@@ -7,9 +7,9 @@ import {
   TextInput,
   TouchableOpacity
 } from 'react-native';
-import firebase from "react-native-firebase";
+import firebase from 'react-native-firebase';
 
-export default class App extends Component {
+export default class LoginScreen extends React.Component {
   state = {
     email: '',
     password: '',
