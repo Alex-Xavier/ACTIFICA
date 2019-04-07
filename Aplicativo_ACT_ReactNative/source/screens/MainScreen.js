@@ -9,22 +9,34 @@ export default class MainScreen extends React.Component {
           barStyle="light-content"
           backgroundColor="#7d253b"
         />
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/EuQuero.png')} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/NaoQuero.png')} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/EuEstou.png')} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/NaoEstou.png')} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/Escolher.png')} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          this.props.navigation.navigate('CustomCards');
+        }}>
           <Image style={styles.cards} source={require('../images/Acoes.png')} />
         </TouchableOpacity>
       </View>
