@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, View, Text } from 'react-native';
 
 export default class CustomCardsScreen extends React.Component {
   render() {
