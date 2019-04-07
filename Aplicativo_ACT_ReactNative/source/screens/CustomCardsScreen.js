@@ -1,17 +1,18 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
 
-export default class CustomCards extends React.Component {
-    render() {
-      return (
-        <View style={styles.container}>
-          <StatusBar
-            barStyle="light-content"
-            backgroundColor="#7d253b"
-          />
-        </View>
-      );
-    }
+export default class CustomCardsScreen extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="#7d253b"
+        />
+        <Text>Eu sou a CustomCardsScreen!!</Text>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
