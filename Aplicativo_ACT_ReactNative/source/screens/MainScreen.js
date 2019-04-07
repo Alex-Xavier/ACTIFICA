@@ -12,32 +12,32 @@ export default class MainScreen extends React.Component {
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/EuQuero.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/EuQuero.png')} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/NaoQuero.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/NaoQuero.png')} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/EuEstou.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/EuEstou.png')} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/NaoEstou.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/NaoEstou.png')} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/Escolher.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/Escolher.png')} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
         }}>
-          <Image style={styles.cards} source={require('../images/Acoes.png')} />
+          <Image style={styles.cards} source={require('../images/mainscreen/Acoes.png')} />
         </TouchableOpacity>
       </View>
     );
