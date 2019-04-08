@@ -6,8 +6,8 @@ export default class CustomCardsScreen extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar
-          barStyle="light-content"
-          backgroundColor="#7d253b"
+          barStyle='light-content'
+          backgroundColor='#7d253b'
         />
         <Text>Eu sou a CustomCardsScreen!!</Text>
       </View>
@@ -18,9 +18,9 @@ export default class CustomCardsScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      flexWrap: "wrap",
-      alignItems: "center",
-      backgroundColor: "#FFF",
+      flexWrap: 'wrap',
+      alignItems: 'center',
+      backgroundColor: '#FFF',
       padding: 20
     }
 });

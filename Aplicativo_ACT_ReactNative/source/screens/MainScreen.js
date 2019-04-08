@@ -6,8 +6,8 @@ export default class MainScreen extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar
-          barStyle="light-content"
-          backgroundColor="#7d253b"
+          barStyle='light-content'
+          backgroundColor='#7d253b'
         />
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');
@@ -47,19 +47,19 @@ export default class MainScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#FFF",
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFF',
     padding: 20
   },
   cards: {
     aspectRatio: 1,
     height: 135,
     width: 135,
-    backgroundColor: "#FFF",
-    borderColor: "#7d253b",
+    backgroundColor: '#FFF',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     margin: 10
   }
