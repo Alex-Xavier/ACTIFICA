@@ -1,6 +1,9 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 
+//Responsividade em Layout
+//var { height, width } = Dimension.get('window');
+
 export default class MainScreen extends React.Component {
   render() {
     return (
