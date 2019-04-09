@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Aplicação da Tecnologia da Informação na Facilitação das Comunicações Alternativas",
+    "githubUrl": "https://github.com/Alex-Xavier/ACTIFICA"
   }
 }
