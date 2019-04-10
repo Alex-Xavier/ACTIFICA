@@ -1,27 +1,27 @@
-//import React from 'react';
 import {createAppContainer , createStackNavigator} from 'react-navigation';
 import MainScreen from './source/screens/MainScreen';
 import CustomCards from './source/screens/CustomCardsScreen';
-//import LogoTitle from './source/components/LogoTitle';
 
 const AppNavigator = createStackNavigator ({
   'Main': {
-    screen: MainScreen
+    screen: MainScreen,
+    navigationOptions: {
+      title: 'Tela Principal'
+    }
   },
   'CustomCards': {
     screen: CustomCards
   }
 }, {
   defaultNavigationOptions: {
-    headerTitle: 'ACTIFICA',
     headerTitleStyle: {
       flexGrow: 1,
       textAlign: 'center'
     },
     headerStyle:{
-      backgroundColor: '#FFF'
+      backgroundColor: '#7d253b'
     },
-    headerTintColor: '#7d253b'
+    headerTintColor: '#FFF'
   
   }
 });
