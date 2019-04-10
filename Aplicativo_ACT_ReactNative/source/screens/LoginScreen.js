@@ -32,20 +32,20 @@ export default class LoginScreen extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar
-          barStyle="light-content"
-          backgroundColor={styles.container.backgroundColor}
+          barStyle='light-content'
+          backgroundColor='#FFF'
         />
 
         <TextInput
           style={styles.input}
-          placeholder="Digite seu e-mail"
+          placeholder='Digite seu e-mail'
           value={this.state.email}
           onChangeText={email => this.setState({ email })}
         />
 
         <TextInput
           style={styles.input}
-          placeholder="Digite sua senha"
+          placeholder='Digite sua senha'
           secureTextEntry={true}
           value={this.state.password}
           onChangeText={password => this.setState({ password })}
@@ -65,26 +65,26 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: '#FFF',
         padding: 20
     },
     button: {
         height: 45,
-        backgroundColor: "#7d253b",
-        alignSelf: "stretch",
+        backgroundColor: '#7d253b',
+        alignSelf: 'stretch',
         paddingHorizontal: 20,
-        justifyContent: "center",
-        alignItems: "center"
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     buttonText: {
-        color: "#000",
-        fontWeight: "bold"
+        color: '#000',
+        fontWeight: 'bold'
     },
     input: {
         height: 45,
-        backgroundColor: "#FFF",
-        alignSelf: "stretch",
-        borderColor: "#e27071",
+        backgroundColor: '#FFF',
+        alignSelf: 'stretch',
+        borderColor: '#e27071',
         borderWidth: 1,
         paddingHorizontal: 20,
         marginBottom: 10
