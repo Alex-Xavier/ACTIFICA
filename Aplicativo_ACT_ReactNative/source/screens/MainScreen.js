@@ -10,7 +10,7 @@ export default class MainScreen extends React.Component {
       <View style={styles.container}>
         <StatusBar
           barStyle='light-content'
-          backgroundColor='#7d253b'
+          backgroundColor='#FFF'
         />
         <TouchableOpacity onPress={() => {
           this.props.navigation.navigate('CustomCards');

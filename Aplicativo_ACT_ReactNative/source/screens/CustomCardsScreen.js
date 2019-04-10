@@ -7,7 +7,7 @@ export default class CustomCardsScreen extends React.Component {
       <View style={styles.container}>
         <StatusBar
           barStyle='light-content'
-          backgroundColor='#7d253b'
+          backgroundColor='#FFF'
         />
         <Text>Eu sou a CustomCardsScreen!!</Text>
       </View>
