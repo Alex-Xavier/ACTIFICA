@@ -10,7 +10,10 @@ const AppNavigator = createStackNavigator ({
     }
   },
   'CustomCards': {
-    screen: CustomCards
+    screen: CustomCards,
+    navigationOptions: {
+      title: 'Cartões Personalizados'
+    }
   }
 }, {
   defaultNavigationOptions: {
@@ -21,8 +24,7 @@ const AppNavigator = createStackNavigator ({
     headerStyle:{
       backgroundColor: '#7d253b'
     },
-    headerTintColor: '#FFF',
-    fontWeight: 'bold'
+    headerTintColor: '#FFF'
   }
 });
 
