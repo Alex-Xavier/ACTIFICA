@@ -13,7 +13,7 @@ export default class MainScreen extends React.Component {
     return (
       <View style={styles.container}>
 
-        <View style={styles.primaryContainer}>
+        <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
@@ -26,7 +26,7 @@ export default class MainScreen extends React.Component {
           </TouchableOpacity>
         </View>
 
-        <View style={styles.primaryLineContainer}>  
+        <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={null}>
             <Text style={styles.buttonText}>Eu Quero</Text>
           </TouchableOpacity>
@@ -65,57 +65,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
   },
-  primaryContainer: {
+  cardContainer: {
     height: Dimensions.get('window').width * 0.4,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 25,
+    paddingHorizontal: Dimensions.get('window').height * 0.04,
     backgroundColor: '#FFF'
   },
-  primaryLineContainer: {
+  buttonContainer: {
     height: Dimensions.get('window').width * 0.09,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 25,
+    paddingHorizontal: Dimensions.get('window').height * 0.04,
     backgroundColor: '#FFF'
-  },
-  secondContainer: {
-    flex: 3,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF',
-    padding: 20
-  },
-  secondLineContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF',
-    padding: 20
-  },
-  thirdContainer: {
-    flex: 3,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF',
-    padding: 20
-  },
-  thirdLineContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF',
-    padding: 20
   },
   cards: {
     aspectRatio: 1,
@@ -125,7 +89,7 @@ const styles = StyleSheet.create({
     borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
-    margin: 11
+    margin: Dimensions.get('window').height * 0.018
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -136,7 +100,7 @@ const styles = StyleSheet.create({
     borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
-    margin: 9.99
+    margin: Dimensions.get('window').height * 0.017
   },
   buttonText: {
     color: '#FFF',
