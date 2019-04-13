@@ -17,44 +17,80 @@ export default class MainScreen extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen/EuQuero.png')} />
+            <Image style={styles.cards} source={require('../images/mainscreen1/euquero.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen/NaoQuero.png')} />
+            <Image style={styles.cards} source={require('../images/mainscreen1/naoquero.png')} />
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>  
-          <TouchableOpacity style={styles.button} onPress={null}>
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
             <Text style={styles.buttonText}>Eu Quero</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={null}>
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
             <Text style={styles.buttonText}>Não Quero</Text>
           </TouchableOpacity>
         </View>
 
-        {/*<TouchableOpacity onPress={() => {
-          this.props.navigation.navigate('CustomCards');
-        }}>
-          <Image style={styles.cards} source={require('../images/mainscreen/EuEstou.png')} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => {
-          this.props.navigation.navigate('CustomCards');
-        }}>
-          <Image style={styles.cards} source={require('../images/mainscreen/NaoEstou.png')} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => {
-          this.props.navigation.navigate('CustomCards');
-        }}>
-          <Image style={styles.cards} source={require('../images/mainscreen/Escolher.png')} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => {
-          this.props.navigation.navigate('CustomCards');
-        }}>
-          <Image style={styles.cards} source={require('../images/mainscreen/Acoes.png')} />
-        </TouchableOpacity>*/}
+        <View style={styles.cardContainer}>
+          <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Image style={styles.cards} source={require('../images/mainscreen1/euestou.png')} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Image style={styles.cards} source={require('../images/mainscreen1/naoestou.png')} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.buttonContainer}>  
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Text style={styles.buttonText}>Eu Estou</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Text style={styles.buttonText}>Não Estou</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.cardContainer}>
+          <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Image style={styles.cards} source={require('../images/mainscreen1/escolher.png')} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.buttonContainer}>  
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Text style={styles.buttonText}>Escolher</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('CustomCards');
+          }}>
+            <Text style={styles.buttonText}>Próxima</Text>
+          </TouchableOpacity>
+        </View>
+
       </View>
     );
   }
@@ -63,10 +99,10 @@ export default class MainScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#FFF',
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.4,
+    height: Dimensions.get('window').width * 0.42,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
