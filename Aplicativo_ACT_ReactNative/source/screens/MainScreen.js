@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   primaryLineContainer: {
-    height: Dimensions.get('window').width * 0.15,
+    height: Dimensions.get('window').width * 0.09,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
@@ -119,20 +119,24 @@ const styles = StyleSheet.create({
   },
   cards: {
     aspectRatio: 1,
-    height: 135,
-    width: 135,
+    height: Dimensions.get('window').width * 0.367,
+    width: Dimensions.get('window').height * 0.367,
     backgroundColor: '#FFF',
     borderColor: '#7d253b',
     borderWidth: 0.5,
-    margin: 10
+    borderRadius: 5,
+    margin: 11
   },
   button: {
-    height: 45,
+    height: Dimensions.get('window').width * 0.08,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#7d253b',
-    alignSelf: 'stretch',
-    paddingHorizontal: 20,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    borderColor: '#7d253b',
+    borderWidth: 0.5,
+    borderRadius: 5,
+    margin: 9.99
   },
   buttonText: {
     color: '#FFF',
