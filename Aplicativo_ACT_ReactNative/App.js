@@ -1,10 +1,12 @@
-import {createAppContainer , createStackNavigator} from 'react-navigation';
-import MainScreen from './source/screens/MainScreen';
+import React from 'react';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
+import Main from './source/screens/MainScreen';
 import CustomCards from './source/screens/CustomCardsScreen';
+import HomeIcon from './source/components/HomeIcon';
 
 const AppNavigator = createStackNavigator ({
   'Main': {
-    screen: MainScreen,
+    screen: Main,
     navigationOptions: {
       title: 'Tela Principal'
     }
@@ -19,8 +21,13 @@ const AppNavigator = createStackNavigator ({
   defaultNavigationOptions: {
     headerTitleStyle: {
       flexGrow: 1,
+      fontWeight: 'bold',
       textAlign: 'center'
     },
+    headerLeft: (null),
+    headerRight: (
+      <HomeIcon />
+    ),
     headerStyle:{
       backgroundColor: '#7d253b'
     },
