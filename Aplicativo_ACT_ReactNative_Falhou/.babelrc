@@ -1,7 +1,0 @@
-{
-  "presets": [
-    "react-native",
-    "module:react-native",
-    "module:metro-react-native-babel-preset"
-  ]
-}
