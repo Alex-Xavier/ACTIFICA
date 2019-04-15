@@ -3,6 +3,7 @@ import { createAppContainer, createStackNavigator } from 'react-navigation';
 import Main from './source/screens/MainScreen';
 import CustomCards from './source/screens/CustomCardsScreen';
 import HomeIcon from './source/components/HomeIcon';
+import { View } from 'react-native';
 
 const AppNavigator = createStackNavigator ({
   'Main': {
@@ -22,9 +23,10 @@ const AppNavigator = createStackNavigator ({
     headerTitleStyle: {
       flexGrow: 1,
       fontWeight: 'bold',
-      textAlign: 'center'
+      textAlign: 'center',
+      textAlignVertical: 'center'
     },
-    headerLeft: (null),
+    headerLeft: (<View></View>),
     headerRight: (
       <HomeIcon />
     ),
