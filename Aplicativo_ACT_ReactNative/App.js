@@ -1,9 +1,9 @@
 import React from 'react';
+import { View } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 import Main from './source/screens/MainScreen';
 import CustomCards from './source/screens/CustomCardsScreen';
 import HomeIcon from './source/components/HomeIcon';
-import { View } from 'react-native';
 
 const AppNavigator = createStackNavigator ({
   'Main': {
