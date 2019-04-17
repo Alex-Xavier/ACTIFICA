@@ -22,7 +22,7 @@ export default class MainScreen extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen1/pessoas.png')} />
+            <Image style={styles.cards} source={require('../images/mainscreen2/pessoas.png')} />
           </TouchableOpacity>
         </View>
 
