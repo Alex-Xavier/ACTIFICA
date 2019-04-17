@@ -4,19 +4,26 @@ import { createAppContainer, createStackNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
+import SecondMain from './source/screens/SecondMainScreen';
 import CustomCards from './source/screens/CustomCardsScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
     screen: Main1,
     navigationOptions: {
-      title: 'Tela Principal'
+      title: 'Menu Principal'
     }
   },
   'Main2': {
     screen: Main2,
     navigationOptions: {
-      title: 'Tela Principal'
+      title: 'Menu Principal'
+    }
+  },
+  'SecondMain': {
+    screen: SecondMain,
+    navigationOptions: {
+      title: 'Menu Querer'
     }
   },
   'CustomCards': {
