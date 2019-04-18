@@ -8,7 +8,7 @@ import {
   Dimensions
 } from 'react-native';
 
-export default class MainScreen extends React.Component {
+export default class SecondMainScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -22,7 +22,7 @@ export default class MainScreen extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen1/higiene.png')} />
+            <Image style={styles.cards} source={require('../images/secondmainscreen/higiene.png')} />
           </TouchableOpacity>
         </View>
 
@@ -48,7 +48,7 @@ export default class MainScreen extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen1/comer.png')} />
+            <Image style={styles.cards} source={require('../images/secondmainscreen/comer.png')} />
           </TouchableOpacity>
         </View>
 

@@ -8,7 +8,7 @@ import {
   Dimensions
 } from 'react-native';
 
-export default class MainScreen extends React.Component {
+export default class MainScreen2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
