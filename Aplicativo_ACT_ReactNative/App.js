@@ -10,6 +10,8 @@ import Action1 from './source/screens/ActionsScreen1';
 import Action2 from './source/screens/ActionsScreen2';
 import Action3 from './source/screens/ActionsScreen3';
 import Answer from './source/screens/AnswerScreen';
+import Plays1 from './source/screens/PlaysScreen1';
+import Plays2 from './source/screens/PlaysScreen2';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -52,6 +54,18 @@ const AppNavigator = createStackNavigator ({
     screen: Answer,
     navigationOptions: {
       title: 'Resposta'
+    }
+  },
+  'Plays1': {
+    screen: Plays1,
+    navigationOptions: {
+      title: 'Brincadeiras'
+    }
+  },
+  'Plays2': {
+    screen: Plays2,
+    navigationOptions: {
+      title: 'Brincadeiras'
     }
   },
   'CustomCards': {
