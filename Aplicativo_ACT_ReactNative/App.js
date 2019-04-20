@@ -26,6 +26,8 @@ import Hygiene1 from './source/screens/HygieneScreen1';
 import Hygiene2 from './source/screens/HygieneScreen2';
 import Phrase1 from './source/screens/PhraseScreen1';
 import Phrase2 from './source/screens/PhraseScreen2';
+import AfterPeopleVerbs from './source/screens/AfterPeopleVerbsScreen';
+import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -164,6 +166,18 @@ const AppNavigator = createStackNavigator ({
     screen: Phrase2,
     navigationOptions: {
       title: 'Frases'
+    }
+  },
+  'AfterPeopleVerbs': {
+    screen: AfterPeopleVerbs,
+    navigationOptions: {
+      title: 'Verbos'
+    }
+  },
+  'BeforePeopleVerbs': {
+    screen: BeforePeopleVerbs,
+    navigationOptions: {
+      title: 'Verbos'
     }
   },
   'CustomCards': {
