@@ -15,6 +15,7 @@ import Plays2 from './source/screens/PlaysScreen2';
 import PeopleFeatures1 from './source/screens/PeopleFeaturesScreen1';
 import PeopleFeatures2 from './source/screens/PeopleFeaturesScreen2';
 import PeopleFeatures3 from './source/screens/PeopleFeaturesScreen3';
+import Places from './source/screens/PlacesScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -87,6 +88,12 @@ const AppNavigator = createStackNavigator ({
     screen: PeopleFeatures3,
     navigationOptions: {
       title: 'Características'
+    }
+  },
+  'Places': {
+    screen: Places,
+    navigationOptions: {
+      title: 'Lugares'
     }
   },
   'CustomCards': {
