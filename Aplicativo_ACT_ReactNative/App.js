@@ -24,6 +24,8 @@ import Drinks from './source/screens/DrinksScreen';
 import Query from './source/screens/QueryScreen';
 import Hygiene1 from './source/screens/HygieneScreen1';
 import Hygiene2 from './source/screens/HygieneScreen2';
+import Phrase1 from './source/screens/PhraseScreen1';
+import Phrase2 from './source/screens/PhraseScreen2';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -150,6 +152,18 @@ const AppNavigator = createStackNavigator ({
     screen: Hygiene2,
     navigationOptions: {
       title: 'Higiene'
+    }
+  },
+  'Phrase1': {
+    screen: Phrase1,
+    navigationOptions: {
+      title: 'Frases'
+    }
+  },
+  'Phrase2': {
+    screen: Phrase2,
+    navigationOptions: {
+      title: 'Frases'
     }
   },
   'CustomCards': {
