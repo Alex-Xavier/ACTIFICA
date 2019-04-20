@@ -2,7 +2,6 @@ import React from 'react';
 import { View } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
-import CustomCards from './source/screens/CustomCardsScreen';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
 import SecondMain from './source/screens/SecondMainScreen';
@@ -28,6 +27,8 @@ import Phrase1 from './source/screens/PhraseScreen1';
 import Phrase2 from './source/screens/PhraseScreen2';
 import AfterPeopleVerbs from './source/screens/AfterPeopleVerbsScreen';
 import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
+import Finish from './source/screens/FinishScreen';
+import CustomCards from './source/screens/CustomCardsScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -178,6 +179,12 @@ const AppNavigator = createStackNavigator ({
     screen: BeforePeopleVerbs,
     navigationOptions: {
       title: 'Verbos'
+    }
+  },
+  'Finish': {
+    screen: Finish,
+    navigationOptions: {
+      title: 'Sua Frase'
     }
   },
   'CustomCards': {
