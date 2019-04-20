@@ -21,6 +21,7 @@ import DearPeople2 from './source/screens/DearPeopleScreen2';
 import Foods1 from './source/screens/FoodsScreen1';
 import Foods2 from './source/screens/FoodsScreen2';
 import Drinks from './source/screens/DrinksScreen';
+import Query from './source/screens/QueryScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -129,6 +130,12 @@ const AppNavigator = createStackNavigator ({
     screen: Drinks,
     navigationOptions: {
       title: 'Bebidas'
+    }
+  },
+  'Query': {
+    screen: Query,
+    navigationOptions: {
+      title: 'Dúvidas'
     }
   },
   'CustomCards': {
