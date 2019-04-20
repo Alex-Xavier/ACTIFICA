@@ -12,6 +12,9 @@ import Action3 from './source/screens/ActionsScreen3';
 import Answer from './source/screens/AnswerScreen';
 import Plays1 from './source/screens/PlaysScreen1';
 import Plays2 from './source/screens/PlaysScreen2';
+import PeopleFeatures1 from './source/screens/PeopleFeaturesScreen1';
+import PeopleFeatures2 from './source/screens/PeopleFeaturesScreen2';
+import PeopleFeatures3 from './source/screens/PeopleFeaturesScreen3';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -66,6 +69,24 @@ const AppNavigator = createStackNavigator ({
     screen: Plays2,
     navigationOptions: {
       title: 'Brincadeiras'
+    }
+  },
+  'PeopleFeatures1': {
+    screen: PeopleFeatures1,
+    navigationOptions: {
+      title: 'Características'
+    }
+  },
+  'PeopleFeatures2': {
+    screen: PeopleFeatures2,
+    navigationOptions: {
+      title: 'Características'
+    }
+  },
+  'PeopleFeatures3': {
+    screen: PeopleFeatures3,
+    navigationOptions: {
+      title: 'Características'
     }
   },
   'CustomCards': {
