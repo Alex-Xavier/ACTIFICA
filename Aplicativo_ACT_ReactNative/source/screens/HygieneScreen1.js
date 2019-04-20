@@ -69,7 +69,7 @@ export default class HygieneScreen1 extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Image style={styles.cards} source={require('../images/hygienescreen1/lavarmaos.png')} />
+            <Image style={styles.cards} source={require('../images/hygienescreen1/lavarasmaos.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('CustomCards');
