@@ -22,6 +22,8 @@ import Foods1 from './source/screens/FoodsScreen1';
 import Foods2 from './source/screens/FoodsScreen2';
 import Drinks from './source/screens/DrinksScreen';
 import Query from './source/screens/QueryScreen';
+import Hygiene1 from './source/screens/HygieneScreen1';
+import Hygiene2 from './source/screens/HygieneScreen2';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -136,6 +138,18 @@ const AppNavigator = createStackNavigator ({
     screen: Query,
     navigationOptions: {
       title: 'Dúvidas'
+    }
+  },
+  'Hygiene1': {
+    screen: Hygiene1,
+    navigationOptions: {
+      title: 'Higiene'
+    }
+  },
+  'Hygiene2': {
+    screen: Hygiene2,
+    navigationOptions: {
+      title: 'Higiene'
     }
   },
   'CustomCards': {
