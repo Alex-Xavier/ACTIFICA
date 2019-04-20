@@ -1,3 +1,5 @@
+.vscode/*
+yarn.lock/*
 node_modules/**/*
 .expo/*
 npm-debug.*
@@ -5,4 +7,3 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
-.vscode
