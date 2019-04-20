@@ -18,6 +18,8 @@ import PeopleFeatures3 from './source/screens/PeopleFeaturesScreen3';
 import Places from './source/screens/PlacesScreen';
 import DearPeople1 from './source/screens/DearPeopleScreen1';
 import DearPeople2 from './source/screens/DearPeopleScreen2';
+import Foods1 from './source/screens/FoodsScreen1';
+import Foods2 from './source/screens/FoodsScreen2';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -108,6 +110,18 @@ const AppNavigator = createStackNavigator ({
     screen: DearPeople2,
     navigationOptions: {
       title: 'Pessoas Queridas'
+    }
+  },
+  'Foods1': {
+    screen: Foods1,
+    navigationOptions: {
+      title: 'Alimentos'
+    }
+  },
+  'Foods2': {
+    screen: Foods2,
+    navigationOptions: {
+      title: 'Alimentos'
     }
   },
   'CustomCards': {
