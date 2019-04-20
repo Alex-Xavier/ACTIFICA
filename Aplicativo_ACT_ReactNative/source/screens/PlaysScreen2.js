@@ -87,7 +87,7 @@ export default class PlaysScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Próxima</Text>
+            <Text style={styles.buttonText}>Quebra Cabeça</Text>
           </TouchableOpacity>
         </View>
 
