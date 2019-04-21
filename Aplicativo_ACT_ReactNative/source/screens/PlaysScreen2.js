@@ -30,12 +30,12 @@ export default class PlaysScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>O Boneco</Text>
+            <Text style={styles.buttonText}>O boneco</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>O Lego</Text>
+            <Text style={styles.buttonText}>O lego</Text>
           </TouchableOpacity>
         </View>
 
@@ -56,7 +56,7 @@ export default class PlaysScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>O Vídeo Game</Text>
+            <Text style={styles.buttonText}>O vídeo game</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
@@ -82,12 +82,12 @@ export default class PlaysScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>O Jardim</Text>
+            <Text style={styles.buttonText}>O jardim</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Quebra Cabeça</Text>
+            <Text style={styles.buttonText}>Quebra cabeça</Text>
           </TouchableOpacity>
         </View>
 
