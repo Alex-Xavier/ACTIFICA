@@ -15,12 +15,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/correr.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/ligarpara.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Correr</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Ligar para</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/subir.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/descer.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Subir</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Descer</Text>
           </TouchableOpacity>
@@ -67,12 +67,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Places');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/irpara.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Action3');
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -80,12 +80,12 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Places');
           }}>
             <Text style={styles.buttonText}>Ir para</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Action3');
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
