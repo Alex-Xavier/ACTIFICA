@@ -5,7 +5,7 @@ export default class HomeIcon extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={() => {
-        this.props.navigation.navigate('Main');
+        this.props.navigation.navigate('Main1');
       }}>
         <Image style={styles.buttonHome} source={require('../icons/home.png')} />
       </TouchableOpacity>
