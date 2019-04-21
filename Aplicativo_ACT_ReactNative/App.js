@@ -34,7 +34,8 @@ const AppNavigator = createStackNavigator ({
   'Main1': {
     screen: Main1,
     navigationOptions: {
-      title: 'Menu Principal'
+      title: 'Menu Principal',
+      headerLeft: (<View></View>)
     }
   },
   'Main2': {
@@ -201,7 +202,7 @@ const AppNavigator = createStackNavigator ({
       textAlign: 'center',
       textAlignVertical: 'center'
     },
-    headerLeft: (<View></View>),
+    /*headerLeft: (<View></View>),*/
     headerRight: (
       <HomeIcon />
     ),
