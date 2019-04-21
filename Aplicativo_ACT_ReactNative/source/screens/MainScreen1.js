@@ -30,12 +30,12 @@ export default class MainScreen1 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Eu Quero</Text>
+            <Text style={styles.buttonText}>Eu quero</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Não Quero</Text>
+            <Text style={styles.buttonText}>Não quero</Text>
           </TouchableOpacity>
         </View>
 
@@ -56,12 +56,12 @@ export default class MainScreen1 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Eu Estou</Text>
+            <Text style={styles.buttonText}>Eu estou</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('CustomCards');
           }}>
-            <Text style={styles.buttonText}>Não Estou</Text>
+            <Text style={styles.buttonText}>Não estou</Text>
           </TouchableOpacity>
         </View>
 
