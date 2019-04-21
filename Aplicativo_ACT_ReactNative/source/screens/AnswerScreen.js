@@ -14,25 +14,25 @@ export default class AnswerScreen extends React.Component {
       <View style={styles.container}>
 
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/answerscreen/sim.png')} />
           </TouchableOpacity>
          
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Sim</Text>
           </TouchableOpacity>
          
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/answerscreen/nao.png')} />
           </TouchableOpacity>
  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('Finish');
           }}>
             <Text style={styles.buttonText}>Não</Text>
           </TouchableOpacity>
