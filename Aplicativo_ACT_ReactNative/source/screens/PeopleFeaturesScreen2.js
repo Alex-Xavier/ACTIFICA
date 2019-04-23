@@ -72,7 +72,7 @@ export default class PeopleFeaturesScreen2 extends React.Component {
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/agitado.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures2');
+            this.props.navigation.navigate('PeopleFeatures3');
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -85,7 +85,7 @@ export default class PeopleFeaturesScreen2 extends React.Component {
             <Text style={styles.buttonText}>Agitado(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures2');
+            this.props.navigation.navigate('PeopleFeatures3');
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
