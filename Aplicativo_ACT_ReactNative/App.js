@@ -16,7 +16,9 @@ import PeopleFeatures2 from './source/screens/PeopleFeaturesScreen2';
 import PeopleFeatures3 from './source/screens/PeopleFeaturesScreen3';
 import Places from './source/screens/PlacesScreen';
 import DearPeople1 from './source/screens/DearPeopleScreen1';
+import SecondDearPeople1 from './source/screens/SecondDearPeopleScreen1';
 import DearPeople2 from './source/screens/DearPeopleScreen2';
+import SecondDearPeople2 from './source/screens/SecondDearPeopleScreen2';
 import Foods1 from './source/screens/FoodsScreen1';
 import Foods2 from './source/screens/FoodsScreen2';
 import Drinks from './source/screens/DrinksScreen';
@@ -116,8 +118,20 @@ const AppNavigator = createStackNavigator ({
       title: 'Pessoas Queridas'
     }
   },
+  'SecondDearPeople1': {
+    screen: SecondDearPeople1,
+    navigationOptions: {
+      title: 'Pessoas Queridas'
+    }
+  },
   'DearPeople2': {
     screen: DearPeople2,
+    navigationOptions: {
+      title: 'Pessoas Queridas'
+    }
+  },
+  'SecondDearPeople2': {
+    screen: SecondDearPeople2,
     navigationOptions: {
       title: 'Pessoas Queridas'
     }
