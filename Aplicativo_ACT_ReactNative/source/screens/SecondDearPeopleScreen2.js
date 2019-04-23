@@ -15,12 +15,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/meutitio.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/minhatitia.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Meu titio</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Minha titia</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/meuprimo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/minhaprima.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Meu primo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Minha prima</Text>
           </TouchableOpacity>
@@ -67,12 +67,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/meuamigo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen2/minhaamiga.png')} />
           </TouchableOpacity>
@@ -80,12 +80,12 @@ export default class SecondDearPeopleScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Meu amigo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('BeforePeopleVerbs');
           }}>
             <Text style={styles.buttonText}>Minha amiga</Text>
           </TouchableOpacity>
