@@ -13,6 +13,11 @@ export default class MainScreen1 extends React.Component {
     return (
       <View style={styles.container}>
 
+        <StatusBar
+          backgroundColor='#FFF'
+          barStyle='dark-content'
+        />
+
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('SecondMain');
