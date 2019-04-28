@@ -44,9 +44,9 @@ const AppNavigator = createStackNavigator ({
   'Main2': {
     screen: Main2,
     navigationOptions: {
-      title: 'Menu Principal'
+      title: 'Menu Principal',
+      headerRight: (<View></View>)
     },
-    headerRight: (<View></View>)
   },
   'SecondMain': {
     screen: SecondMain,
