@@ -37,14 +37,16 @@ const AppNavigator = createStackNavigator ({
     screen: Main1,
     navigationOptions: {
       title: 'Menu Principal',
-      headerLeft: (<View></View>)
+      headerLeft: (<View></View>),
+      headerRight: (<View></View>)
     }
   },
   'Main2': {
     screen: Main2,
     navigationOptions: {
       title: 'Menu Principal'
-    }
+    },
+    headerRight: (<View></View>)
   },
   'SecondMain': {
     screen: SecondMain,
@@ -209,21 +211,23 @@ const AppNavigator = createStackNavigator ({
     }
   }
 }, {
-  defaultNavigationOptions: {
-    headerTitleStyle: {
-      flexGrow: 1,
-      fontWeight: 'bold',
-      textAlign: 'center',
-      textAlignVertical: 'center'
-    },
-    /*headerLeft: (<View></View>),*/
-    headerRight: (
-      <HomeIcon />
-    ),
-    headerStyle:{
-      backgroundColor: '#7d253b'
-    },
-    headerTintColor: '#FFF'
+  defaultNavigationOptions: ({ navigation }) => {
+    return {
+      headerTitleStyle: {
+        flexGrow: 1,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        textAlignVertical: 'center'
+      },
+      /*headerLeft: (<View></View>),*/
+      headerRight: (
+        <HomeIcon navigation={navigation} />
+      ),
+      headerStyle:{
+        backgroundColor: '#7d253b'
+      },
+      headerTintColor: '#FFF'
+    }
   }
 });
 
