@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  StatusBar,
   StyleSheet,
   View,
   Image,
