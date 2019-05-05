@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class HomeIcon extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={() => {
+        ScreenOrientation.allowAsync('PORTRAIT');
         this.props.navigation.navigate('Main1');
       }}>
         <Image style={styles.buttonHome} source={require('../icons/home.png')} />

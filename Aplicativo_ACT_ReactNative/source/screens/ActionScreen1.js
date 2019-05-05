@@ -7,6 +7,7 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class ActionScreen1 extends React.Component {
   render() {
@@ -15,6 +16,7 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/mevestir.png')} />
