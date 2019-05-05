@@ -201,7 +201,8 @@ const AppNavigator = createStackNavigator ({
   'Finish': {
     screen: Finish,
     navigationOptions: {
-      title: 'Sua Frase'
+      title: 'Sua Frase',
+      headerLeft: (<View></View>)
     }
   },
   'CustomCards': {
