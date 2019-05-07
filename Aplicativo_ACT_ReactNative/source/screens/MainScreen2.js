@@ -30,7 +30,7 @@ export default class MainScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Phrase1');
           }}>
-            <Text style={styles.buttonText}>Social</Text>
+            <Text style={styles.buttonText}>Socializar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('AfterPeopleVerbs');
