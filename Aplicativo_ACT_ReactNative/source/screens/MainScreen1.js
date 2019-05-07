@@ -88,7 +88,7 @@ export default class MainScreen1 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Answer');
           }}>
-            <Text style={styles.buttonText}>Escolher</Text>
+            <Text style={styles.buttonText}>Responder</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Main2');
