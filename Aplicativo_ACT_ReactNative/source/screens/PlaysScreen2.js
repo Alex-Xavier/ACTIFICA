@@ -15,12 +15,12 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 6 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/boneco.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 7 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/lego.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 6 });
           }}>
             <Text style={styles.buttonText}>O boneco</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 7 });
           }}>
             <Text style={styles.buttonText}>O lego</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 8 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/videogame.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 9 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/desenhar.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 8 });
           }}>
             <Text style={styles.buttonText}>O vídeo game</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 9 });
           }}>
             <Text style={styles.buttonText}>Desenhar</Text>
           </TouchableOpacity>
@@ -67,12 +67,12 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 10 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/jardim.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 11 });
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen2/quebracabeca.png')} />
           </TouchableOpacity>
@@ -80,14 +80,14 @@ export default class PlaysScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 10 });
           }}>
             <Text style={styles.buttonText}>O jardim</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 11 });
           }}>
-            <Text style={styles.buttonText}>Quebra cabeça</Text>
+            <Text style={styles.buttonText}>O quebra cabeça</Text>
           </TouchableOpacity>
         </View>
 

@@ -16,6 +16,12 @@ export default class FinishScreen extends React.Component {
       require('../images/playsscreen1/cachorro.png'),
       require('../images/playsscreen1/carrinho.png'),
       require('../images/playsscreen1/boneca.png'),
+      require('../images/playsscreen2/boneco.png'),
+      require('../images/playsscreen2/lego.png'),
+      require('../images/playsscreen2/videogame.png'),
+      require('../images/playsscreen2/desenhar.png'),
+      require('../images/playsscreen2/jardim.png'),
+      require('../images/playsscreen2/quebracabeca.png'),
     ];
     let texts = [
       'Eu quero',
@@ -24,6 +30,12 @@ export default class FinishScreen extends React.Component {
       'o cachorro!',
       'o carrinho!',
       'a boneca!',
+      'o boneco!',
+      'o lego!',
+      'o vídeo game!',
+      'desenhar!',
+      'o jardim!',
+      'o quebra cabeça!',
     ];
     return (
       <View style={styles.container}>
