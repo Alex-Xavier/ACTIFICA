@@ -82,7 +82,7 @@ export default class ActionScreen1 extends React.Component {
             <Image style={styles.cards} source={require('../images/actionscreen1/sentar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Action2');
+            this.props.navigation.navigate('Action2', { image1: this.props.navigation.state.params.image0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -96,7 +96,7 @@ export default class ActionScreen1 extends React.Component {
             <Text style={styles.buttonText}>Sentar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Action2');
+            this.props.navigation.navigate('Action2', { image1: this.props.navigation.state.params.image0});
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>

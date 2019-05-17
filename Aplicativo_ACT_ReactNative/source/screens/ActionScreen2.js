@@ -79,7 +79,7 @@ export default class ActionScreen2 extends React.Component {
             <Image style={styles.cards} source={require('../images/actionscreen2/irpara.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Action3');
+            this.props.navigation.navigate('Action3', { image1: this.props.navigation.state.params.image0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -92,7 +92,7 @@ export default class ActionScreen2 extends React.Component {
             <Text style={styles.buttonText}>Ir para</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Action3');
+            this.props.navigation.navigate('Action3', { image1: this.props.navigation.state.params.image0});
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
