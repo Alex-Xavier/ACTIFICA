@@ -82,7 +82,7 @@ export default class SecondMainScreen extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Drinks');
           }}>
-            <Text style={styles.buttonText}>Tomar</Text>
+            <Text style={styles.buttonText}>Beber</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Query');
