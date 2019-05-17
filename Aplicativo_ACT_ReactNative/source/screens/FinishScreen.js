@@ -64,6 +64,11 @@ export default class FinishScreen extends React.Component {
       require('../images/drinksscreen/leite.png'),
       require('../images/drinksscreen/iogurte.png'),
       require('../images/drinksscreen/achocolatado.png'),
+      require('../images/queryscreen/saberquem.png'),
+      require('../images/queryscreen/saberquando.png'),
+      require('../images/queryscreen/saberonde.png'),
+      require('../images/queryscreen/saberoporque.png'),
+      require('../images/queryscreen/sabercomo.png'),
       ,
       ,
       ,
@@ -73,11 +78,7 @@ export default class FinishScreen extends React.Component {
       ,
       ,
       ,
-      ,
-      ,
-      ,
-      ,
-
+      
     ];
     let texts = [
       'Eu quero',
@@ -134,11 +135,11 @@ export default class FinishScreen extends React.Component {
       'leite!',
       'iogurte!',
       'achocolatado!',
-      '',
-      '',
-      '',
-      '',
-      ''
+      'saber quem!',
+      'saber quando!',
+      'saber onde!',
+      'saber o porque!',
+      'saber como!'
     ];
     return (
       <View style={styles.container}>

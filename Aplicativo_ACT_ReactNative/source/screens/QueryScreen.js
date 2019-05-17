@@ -15,12 +15,14 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 54 });
           }}>
             <Image style={styles.cards} source={require('../images/queryscreen/saberquem.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 55 });
           }}>
             <Image style={styles.cards} source={require('../images/queryscreen/saberquando.png')} />
           </TouchableOpacity>
@@ -28,12 +30,14 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 54 });
           }}>
             <Text style={styles.buttonText}>Saber quem</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 55 });
           }}>
             <Text style={styles.buttonText}>Saber quando</Text>
           </TouchableOpacity>
@@ -41,12 +45,14 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 56 });
           }}>
             <Image style={styles.cards} source={require('../images/queryscreen/saberonde.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 57 });
           }}>
             <Image style={styles.cards} source={require('../images/queryscreen/saberoporque.png')} />
           </TouchableOpacity>
@@ -54,12 +60,14 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 56 });
           }}>
             <Text style={styles.buttonText}>Saber onde</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 57 });
           }}>
             <Text style={styles.buttonText}>Saber o porque</Text>
           </TouchableOpacity>
@@ -67,7 +75,8 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 58 });
           }}>
             <Image style={styles.cards} source={require('../images/queryscreen/sabercomo.png')} />
           </TouchableOpacity>
@@ -80,7 +89,8 @@ export default class QueryScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 58 });
           }}>
             <Text style={styles.buttonText}>Saber como</Text>
           </TouchableOpacity>
