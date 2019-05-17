@@ -21,12 +21,12 @@ export default class MainScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SecondMain');
+            this.props.navigation.navigate('SecondMain', { image0: 0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/euquero.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SecondMain');
+            this.props.navigation.navigate('SecondMain', { image0: 59});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/naoquero.png')} />
           </TouchableOpacity>
@@ -34,12 +34,12 @@ export default class MainScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('SecondMain');
+            this.props.navigation.navigate('SecondMain', { image0: 0});
           }}>
             <Text style={styles.buttonText}>Eu quero</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('SecondMain');
+            this.props.navigation.navigate('SecondMain', { image0: 59});
           }}>
             <Text style={styles.buttonText}>Não quero</Text>
           </TouchableOpacity>
