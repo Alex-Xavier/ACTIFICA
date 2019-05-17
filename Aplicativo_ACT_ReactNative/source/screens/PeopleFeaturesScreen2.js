@@ -7,6 +7,7 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class PeopleFeaturesScreen2 extends React.Component {
   render() {
@@ -15,12 +16,14 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 67 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/bravo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 68 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/triste.png')} />
           </TouchableOpacity>
@@ -28,12 +31,14 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 67 });
           }}>
             <Text style={styles.buttonText}>Bravo(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 68 });
           }}>
             <Text style={styles.buttonText}>Triste</Text>
           </TouchableOpacity>
@@ -41,12 +46,14 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 69 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/medroso.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 70 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/apaixonado.png')} />
           </TouchableOpacity>
@@ -54,12 +61,14 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 69 });
           }}>
-            <Text style={styles.buttonText}>Medroso(a)</Text>
+            <Text style={styles.buttonText}>Com medo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 70 });
           }}>
             <Text style={styles.buttonText}>Apaixonado(a)</Text>
           </TouchableOpacity>
@@ -67,12 +76,13 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 71 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen2/agitado.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures3');
+            this.props.navigation.navigate('PeopleFeatures3', { image0: this.props.navigation.state.params.image0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -80,12 +90,13 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 71 });
           }}>
             <Text style={styles.buttonText}>Agitado(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures3');
+            this.props.navigation.navigate('PeopleFeatures3', { image0: this.props.navigation.state.params.image0});
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
