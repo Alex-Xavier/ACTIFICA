@@ -15,11 +15,13 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 1} );
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen1/assistirtv.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 2} );
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen1/ouvirmusica.png')} />
@@ -28,11 +30,13 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 1} );
           }}>
             <Text style={styles.buttonText}>Assistir tv</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 2} );
           }}>
             <Text style={styles.buttonText}>Ouvir música</Text>
@@ -41,11 +45,13 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 3} );
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen1/cachorro.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 4} );
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen1/carrinho.png')} />
@@ -54,11 +60,13 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 3} );
           }}>
             <Text style={styles.buttonText}>O cachorro</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 4} );
           }}>
             <Text style={styles.buttonText}>O carrinho</Text>
@@ -67,6 +75,7 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 5} );
           }}>
             <Image style={styles.cards} source={require('../images/playsscreen1/boneca.png')} />
@@ -80,6 +89,7 @@ export default class PlaysScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: 0, image2: 5} );
           }}>
             <Text style={styles.buttonText}>A boneca</Text>
