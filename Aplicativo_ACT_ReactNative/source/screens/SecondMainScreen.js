@@ -15,12 +15,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Plays1');
+            this.props.navigation.navigate('Plays1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/brincadeiras.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Hygiene1');
+            this.props.navigation.navigate('Hygiene1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/higiene.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Plays1');
+            this.props.navigation.navigate('Plays1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Brincadeiras</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Hygiene1');
+            this.props.navigation.navigate('Hygiene1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Higiene</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Action1');
+            this.props.navigation.navigate('Action1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/acoes.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Foods1');
+            this.props.navigation.navigate('Foods1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/comer.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Action1');
+            this.props.navigation.navigate('Action1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Ações</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Foods1');
+            this.props.navigation.navigate('Foods1', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Comer</Text>
           </TouchableOpacity>
@@ -67,12 +67,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Drinks');
+            this.props.navigation.navigate('Drinks', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/tomar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Query');
+            this.props.navigation.navigate('Query', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Image style={styles.cards} source={require('../images/secondmainscreen/duvidas.png')} />
           </TouchableOpacity>
@@ -80,12 +80,12 @@ export default class SecondMainScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Drinks');
+            this.props.navigation.navigate('Drinks', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Beber</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Query');
+            this.props.navigation.navigate('Query', { image0: this.props.navigation.state.params.image0 });
           }}>
             <Text style={styles.buttonText}>Dúvidas</Text>
           </TouchableOpacity>
