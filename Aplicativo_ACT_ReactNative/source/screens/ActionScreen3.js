@@ -7,6 +7,7 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class ActionScreen3 extends React.Component {
   render() {
@@ -16,13 +17,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 31 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 31 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/voltar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 32 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 32 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/ficar.png')} />
           </TouchableOpacity>
@@ -31,13 +32,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 31 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 31 });
           }}>
             <Text style={styles.buttonText}>Voltar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 32 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 32 });
           }}>
             <Text style={styles.buttonText}>Ficar</Text>
           </TouchableOpacity>
@@ -46,13 +47,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 33 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 33 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/estudar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 34 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 34 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/cheirar.png')} />
           </TouchableOpacity>
@@ -61,13 +62,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 33 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 33 });
           }}>
             <Text style={styles.buttonText}>Estudar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 34 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 34 });
           }}>
             <Text style={styles.buttonText}>Cheirar</Text>
           </TouchableOpacity>
@@ -76,13 +77,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 35 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 35 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/tocar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 36 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 36 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen3/ver.png')} />
           </TouchableOpacity>
@@ -91,13 +92,13 @@ export default class ActionScreen3 extends React.Component {
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 35 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 35 });
           }}>
             <Text style={styles.buttonText}>Tocar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
-            this.props.navigation.navigate('Finish', { image1: 0, image2: 36 });
+            this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 36 });
           }}>
             <Text style={styles.buttonText}>Ver</Text>
           </TouchableOpacity>
