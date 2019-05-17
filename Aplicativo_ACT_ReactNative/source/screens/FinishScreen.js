@@ -33,11 +33,11 @@ export default class FinishScreen extends React.Component {
       require('../images/hygienescreen2/desodorante.png'),
       require('../images/hygienescreen2/pentearocabelo.png'),
       require('../images/hygienescreen2/daradescarga.png'),
-      ,
-      ,
-      ,
-      ,
-      ,
+      require('../images/actionscreen1/mevestir.png'),
+      require('../images/actionscreen1/deitar.png'),
+      require('../images/actionscreen1/levantar.png'),
+      require('../images/actionscreen1/dormir.png'),
+      require('../images/actionscreen1/sentar.png'),
       ,
       ,
       ,
@@ -103,11 +103,11 @@ export default class FinishScreen extends React.Component {
       'o desodorante!',
       'pentear o cabelo!',
       'dar a descarga!',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'me vestir!',
+      'deitar!',
+      'levantar!',
+      'dormir!',
+      'sentar!',
       '',
       '',
       '',
@@ -145,8 +145,8 @@ export default class FinishScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           
-          <Image style={styles.cards} source={images[this.props.params.navigate.image1]} />
-          <Image style={styles.cards} source={images[this.props.params.navigate.image2]} />
+          <Image style={styles.cards} source={images[this.props.navigation.state.params.image1]} />
+          <Image style={styles.cards} source={images[this.props.navigation.state.params.image2]} />
           
         </View>
 
@@ -154,13 +154,13 @@ export default class FinishScreen extends React.Component {
           
           <View style={styles.button} >
             
-            <Text style={styles.buttonText}>{texts[this.props.params.navigate.image1]}</Text>
+            <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image1]}</Text>
           
           </View>
           
           <View style={styles.button} >
           
-            <Text style={styles.buttonText}>{texts[this.props.params.navigate.image2]}</Text>
+            <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image2]}</Text>
           
           </View>
           
