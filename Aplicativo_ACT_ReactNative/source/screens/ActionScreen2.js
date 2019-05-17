@@ -15,12 +15,13 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 28 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/correr.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('DearPeople1');
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/ligarpara.png')} />
           </TouchableOpacity>
@@ -28,12 +29,13 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 28 });
           }}>
             <Text style={styles.buttonText}>Correr</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('DearPeople1');
           }}>
             <Text style={styles.buttonText}>Ligar para</Text>
           </TouchableOpacity>
@@ -41,12 +43,14 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 29 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/subir.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 30 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/descer.png')} />
           </TouchableOpacity>
@@ -54,12 +58,14 @@ export default class ActionScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 29 });
           }}>
             <Text style={styles.buttonText}>Subir</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish', { image1: 0, image2: 30 });
           }}>
             <Text style={styles.buttonText}>Descer</Text>
           </TouchableOpacity>
