@@ -82,7 +82,7 @@ export default class HygieneScreen1 extends React.Component {
             <Image style={styles.cards} source={require('../images/hygienescreen1/lavarasmaos.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Hygiene2', { image1: this.props.navigation.state.params.image0});
+            this.props.navigation.navigate('Hygiene2', { image0: this.props.navigation.state.params.image0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -96,7 +96,7 @@ export default class HygieneScreen1 extends React.Component {
             <Text style={styles.buttonText}>Lavar as mãos</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Hygiene2', { image1: this.props.navigation.state.params.image0});
+            this.props.navigation.navigate('Hygiene2', { image0: this.props.navigation.state.params.image0});
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>

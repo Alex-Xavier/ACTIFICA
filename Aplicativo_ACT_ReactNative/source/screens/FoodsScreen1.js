@@ -82,7 +82,7 @@ export default class FoodsScreen1 extends React.Component {
             <Image style={styles.cards} source={require('../images/foodsscreen1/pao.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Foods2', { image1: this.props.navigation.state.params.image0});
+            this.props.navigation.navigate('Foods2', { image0: this.props.navigation.state.params.image0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -96,7 +96,7 @@ export default class FoodsScreen1 extends React.Component {
             <Text style={styles.buttonText}>Pão</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Foods2', { image1: this.props.navigation.state.params.image0});
+            this.props.navigation.navigate('Foods2', { image0: this.props.navigation.state.params.image0});
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
