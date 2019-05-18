@@ -22,7 +22,7 @@ export default class ActionScreen2 extends React.Component {
             <Image style={styles.cards} source={require('../images/actionscreen2/correr.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('DearPeople1');
+            this.props.navigation.navigate('DearPeople1', { image1: this.props.navigation.state.params.image0, image2: 1 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen2/ligarpara.png')} />
           </TouchableOpacity>
@@ -36,7 +36,7 @@ export default class ActionScreen2 extends React.Component {
             <Text style={styles.buttonText}>Correr</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('DearPeople1');
+            this.props.navigation.navigate('DearPeople1', { image1: this.props.navigation.state.params.image0, image2: 1 });
           }}>
             <Text style={styles.buttonText}>Ligar para</Text>
           </TouchableOpacity>

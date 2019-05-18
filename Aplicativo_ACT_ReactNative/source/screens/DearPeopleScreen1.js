@@ -7,6 +7,7 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class DearPeopleScreen1 extends React.Component {
   render() {
@@ -15,12 +16,14 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 2 });
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen1/mamae.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 3 });
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen1/papai.png')} />
           </TouchableOpacity>
@@ -28,12 +31,14 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 2 });
           }}>
             <Text style={styles.buttonText}>Mamãe</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 3 });
           }}>
             <Text style={styles.buttonText}>Papai</Text>
           </TouchableOpacity>
@@ -41,12 +46,14 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 4 });
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen1/meuvovo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 5 });
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen1/minhavovo.png')} />
           </TouchableOpacity>
@@ -54,12 +61,14 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 4 });
           }}>
             <Text style={styles.buttonText}>Meu vovô</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 5 });
           }}>
             <Text style={styles.buttonText}>Minha vovó</Text>
           </TouchableOpacity>
@@ -67,12 +76,13 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 6 });
           }}>
             <Image style={styles.cards} source={require('../images/dearpeoplescreen1/professora.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('DearPeople2', { image1: this.props.navigation.state.params.image1 });
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/proxima.png')} />
           </TouchableOpacity>
@@ -80,12 +90,13 @@ export default class DearPeopleScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            ScreenOrientation.allowAsync('LANDSCAPE');
+            this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 1, image3: 6 });
           }}>
             <Text style={styles.buttonText}>A professora</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('CustomCards');
+            this.props.navigation.navigate('DearPeople2', { image1: this.props.navigation.state.params.image1 });
           }}>
             <Text style={styles.buttonText}>Próxima</Text>
           </TouchableOpacity>
