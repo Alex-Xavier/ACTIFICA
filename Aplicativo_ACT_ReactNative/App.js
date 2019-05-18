@@ -30,6 +30,8 @@ import Phrase2 from './source/screens/PhraseScreen2';
 import AfterPeopleVerbs from './source/screens/AfterPeopleVerbsScreen';
 import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
 import Finish from './source/screens/FinishScreen';
+import Finish0 from './source/screens/FinishScreen0';
+import Finish1 from './source/screens/FinishScreen1';
 import CustomCards from './source/screens/CustomCardsScreen';
 
 const AppNavigator = createStackNavigator ({
@@ -200,6 +202,20 @@ const AppNavigator = createStackNavigator ({
   },
   'Finish': {
     screen: Finish,
+    navigationOptions: {
+      title: 'Sua Frase',
+      headerLeft: (<View></View>)
+    }
+  },
+  'Finish0': {
+    screen: Finish0,
+    navigationOptions: {
+      title: 'Resposta',
+      headerLeft: (<View></View>)
+    }
+  },
+  'Finish1': {
+    screen: Finish1,
     navigationOptions: {
       title: 'Sua Frase',
       headerLeft: (<View></View>)
