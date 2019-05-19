@@ -20,7 +20,7 @@ export default class MainScreen2 extends React.Component {
             <Image style={styles.cards} source={require('../images/mainscreen2/social.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('AfterPeopleVerbs');
+            this.props.navigation.navigate('SecondDearPeople1');
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen2/pessoas.png')} />
           </TouchableOpacity>
@@ -33,7 +33,7 @@ export default class MainScreen2 extends React.Component {
             <Text style={styles.buttonText}>Socializar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('AfterPeopleVerbs');
+            this.props.navigation.navigate('SecondDearPeople1');
           }}>
             <Text style={styles.buttonText}>Pessoas</Text>
           </TouchableOpacity>

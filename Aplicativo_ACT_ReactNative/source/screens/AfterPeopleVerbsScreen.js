@@ -14,25 +14,25 @@ export default class AfterPeopleVerbsScreen extends React.Component {
       <View style={styles.container}>
 
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('SecondPeopleFeatures1', { image1: this.props.navigation.state.params.image1, image2: 20 });
           }}>
             <Image style={styles.cards} source={require('../images/afterpeopleverbsscreen/esta.png')} />
           </TouchableOpacity>
   
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('SecondPeopleFeatures1', { image1: this.props.navigation.state.params.image1, image2: 20 });
           }}>
             <Text style={styles.buttonText}>Está</Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('SecondPeopleFeatures1', { image1: this.props.navigation.state.params.image1, image2: 21 });
           }}>
             <Image style={styles.cards} source={require('../images/afterpeopleverbsscreen/e.png')} />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('SecondPeopleFeatures1', { image1: this.props.navigation.state.params.image1, image2: 21 });
           }}>
             <Text style={styles.buttonText}>é</Text>
           </TouchableOpacity>
