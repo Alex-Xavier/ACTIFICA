@@ -43,12 +43,12 @@ export default class MainScreen2 extends React.Component {
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('PeopleFeatures1');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/caracteristicas.png')} />
+            <Image style={styles.cards} source={require('../images/mainscreen2/eusou.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('PeopleFeatures1');
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/eusou.png')} />
+            <Image style={styles.cards} source={require('../images/mainscreen2/eunaosou.png')} />
           </TouchableOpacity>
         </View>
 
@@ -56,21 +56,16 @@ export default class MainScreen2 extends React.Component {
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('PeopleFeatures1');
           }}>
-            <Text style={styles.buttonText}>Características</Text>
+            <Text style={styles.buttonText}>Eu sou</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('PeopleFeatures1');
           }}>
-            <Text style={styles.buttonText}>Eu sou</Text>
+            <Text style={styles.buttonText}>Eu não sou</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.cardContainer}>
-          <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
-          }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/eunaosou.png')} />
-          </TouchableOpacity>
           <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
@@ -79,11 +74,6 @@ export default class MainScreen2 extends React.Component {
         </View>
 
         <View style={styles.buttonContainer}>  
-          <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
-          }}>
-            <Text style={styles.buttonText}>Eu não sou</Text>
-          </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
