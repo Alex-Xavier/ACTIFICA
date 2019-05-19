@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
+    height: Dimensions.get('window').width * 0.6,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
@@ -229,18 +229,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.209,
-    width: Dimensions.get('window').height * 0.209,
+    height: Dimensions.get('window').width * 0.5,
+    width: Dimensions.get('window').height * 0.3,
     backgroundColor: '#FFF',
     borderColor: '#7d253b',
     borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
-    width: Dimensions.get('window').height * 0.209,
+    width: Dimensions.get('window').height * 0.3,
     backgroundColor: '#7d253b',
     justifyContent: 'center',
     alignItems: 'center',
