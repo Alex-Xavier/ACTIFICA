@@ -41,12 +41,12 @@ export default class MainScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('PeopleFeatures1', { image0: 78});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen2/eusou.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('PeopleFeatures1', { image0: 79});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen2/eunaosou.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class MainScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('PeopleFeatures1', { image0: 78});
           }}>
             <Text style={styles.buttonText}>Eu sou</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1');
+            this.props.navigation.navigate('PeopleFeatures1', { image0: 79});
           }}>
             <Text style={styles.buttonText}>Eu não sou</Text>
           </TouchableOpacity>

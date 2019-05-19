@@ -87,7 +87,9 @@ export default class FinishScreen extends React.Component {
       require('../images/peoplefeaturesscreen3/inocente.png'),
       require('../images/peoplefeaturesscreen3/justo.png'),
       require('../images/peoplefeaturesscreen3/forte.png'),
-      require('../images/peoplefeaturesscreen3/indeciso.png')
+      require('../images/peoplefeaturesscreen3/indeciso.png'),
+      require('../images/mainscreen2/eusou.png'),
+      require('../images/mainscreen2/eunaosou.png')
     ];
     let texts = [
       'Eu quero',
@@ -159,15 +161,17 @@ export default class FinishScreen extends React.Component {
       'legal!',
       'bravo(a)!',
       'triste!',
-      'com medo!',
+      'medroso(a)!',
       'apaixonado(a)!',
       'agitado(a)!',
       'calmo(a)!',
       'ansioso(a)!',
-      'tranquilo!',
+      'tranquilo(a)!',
       'justo(a)!',
       'forte!',
-      'indeciso(a)!'
+      'indeciso(a)!',
+      'Eu sou',
+      'Eu não sou'
     ];
     return (
       <View style={styles.container}>

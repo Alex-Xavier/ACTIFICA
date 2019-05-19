@@ -64,7 +64,7 @@ export default class PeopleFeaturesScreen2 extends React.Component {
             ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 69 });
           }}>
-            <Text style={styles.buttonText}>Com medo</Text>
+            <Text style={styles.buttonText}>Medroso(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
