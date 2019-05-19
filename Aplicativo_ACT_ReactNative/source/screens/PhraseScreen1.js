@@ -15,12 +15,12 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 2 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen1/oi.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 3 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen1/podemeajudar.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 2 });
           }}>
             <Text style={styles.buttonText}>Oi</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 3 });
           }}>
             <Text style={styles.buttonText}>Pode me ajudar?</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 4 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen1/comovai.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 5 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen1/obrigado.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 4 });
           }}>
             <Text style={styles.buttonText}>Como vai?</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 5 });
           }}>
             <Text style={styles.buttonText}>Obrigado</Text>
           </TouchableOpacity>
@@ -67,7 +67,7 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 6 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen1/desculpe.png')} />
           </TouchableOpacity>
@@ -80,7 +80,7 @@ export default class PhraseScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 6 });
           }}>
             <Text style={styles.buttonText}>Desculpe</Text>
           </TouchableOpacity>

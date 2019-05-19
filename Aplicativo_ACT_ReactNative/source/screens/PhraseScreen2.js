@@ -15,12 +15,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 7 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/porfavor.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 8 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/tchau.png')} />
           </TouchableOpacity>
@@ -28,12 +28,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 7 });
           }}>
             <Text style={styles.buttonText}>Por favor</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 8 });
           }}>
             <Text style={styles.buttonText}>Tchau</Text>
           </TouchableOpacity>
@@ -41,12 +41,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 9 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/estoubem.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 10 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/qualseunome.png')} />
           </TouchableOpacity>
@@ -54,12 +54,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 9 });
           }}>
             <Text style={styles.buttonText}>Estou bem</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 10 });
           }}>
             <Text style={styles.buttonText}>Qual seu nome?</Text>
           </TouchableOpacity>
@@ -67,12 +67,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 11 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/bomdia.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 12 });
           }}>
             <Image style={styles.cards} source={require('../images/phrasescreen2/boanoite.png')} />
           </TouchableOpacity>
@@ -80,12 +80,12 @@ export default class PhraseScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 11 });
           }}>
             <Text style={styles.buttonText}>Bom dia</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Finish');
+            this.props.navigation.navigate('Finish0', { image1: 12 });
           }}>
             <Text style={styles.buttonText}>Boa noite</Text>
           </TouchableOpacity>
