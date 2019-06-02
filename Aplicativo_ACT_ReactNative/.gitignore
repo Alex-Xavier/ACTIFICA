@@ -1,7 +1,8 @@
-yarn.lock/*
 node_modules/**/*
 .expo/*
 npm-debug.*
+*.watchmanconfig
+*.lock
 *.jks
 *.p12
 *.key
