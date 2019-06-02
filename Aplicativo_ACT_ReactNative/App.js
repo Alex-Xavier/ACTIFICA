@@ -35,7 +35,6 @@ import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
 import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
-import CustomCards from './source/screens/CustomCardsScreen';
 
 const AppNavigator = createStackNavigator ({
   'Main1': {
@@ -240,12 +239,6 @@ const AppNavigator = createStackNavigator ({
     navigationOptions: {
       title: 'Sua Frase',
       headerLeft: (<View></View>)
-    }
-  },
-  'CustomCards': {
-    screen: CustomCards,
-    navigationOptions: {
-      title: 'Cartões Personalizados'
     }
   }
 }, {
