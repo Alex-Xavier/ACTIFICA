@@ -2,7 +2,7 @@ node_modules/**/*
 .expo/*
 npm-debug.*
 *.watchmanconfig
-*.lock
+yarn.*
 *.jks
 *.p12
 *.key
