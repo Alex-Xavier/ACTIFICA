@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
+import { createAppContainer, createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
@@ -36,7 +36,7 @@ import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
 
-const AppNavigator = createStackNavigator ({
+const HomeNavigator = createStackNavigator ({
   'Main1': {
     screen: Main1,
     navigationOptions: {
@@ -250,11 +250,10 @@ const AppNavigator = createStackNavigator ({
         textAlign: 'center',
         textAlignVertical: 'center'
       },
-      /*headerLeft: (<View></View>),*/
       headerRight: (
         <HomeIcon navigation={navigation} />
       ),
-      headerStyle:{
+      headerStyle: {
         backgroundColor: '#7d253b'
       },
       headerTintColor: '#FFF'
@@ -262,6 +261,12 @@ const AppNavigator = createStackNavigator ({
   }
 });
 
-const AppContainer = createAppContainer(AppNavigator);
+const DrawerNavigator = createDrawerNavigator ({
+  'Principal': {
+    screen: HomeNavigator
+  }
+});
 
-export default AppContainer;
+const AppDrawerContainer = createAppContainer(DrawerNavigator);
+
+export default AppDrawerContainer;
