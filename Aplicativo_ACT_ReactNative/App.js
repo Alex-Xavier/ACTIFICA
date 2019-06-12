@@ -32,11 +32,18 @@ import Phrase1 from './source/screens/PhraseScreen1';
 import Phrase2 from './source/screens/PhraseScreen2';
 import AfterPeopleVerbs from './source/screens/AfterPeopleVerbsScreen';
 import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
+import Colors from './source/screens/ColorsScreen';
 import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
 
 const AppNavigator = createStackNavigator ({
+  'Colors': {
+    screen: Colors,
+    navigationOptions: {
+      title: 'Cores'
+    }
+  },
   'Main1': {
     screen: Main1,
     navigationOptions: {
@@ -250,7 +257,6 @@ const AppNavigator = createStackNavigator ({
         textAlign: 'center',
         textAlignVertical: 'center'
       },
-      /*headerLeft: (<View></View>),*/
       headerRight: (
         <HomeIcon navigation={navigation} />
       ),
