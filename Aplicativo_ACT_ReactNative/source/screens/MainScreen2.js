@@ -67,6 +67,11 @@ export default class MainScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('SchoolMain');
+          }}>
+            <Image style={styles.cards} source={require('../images/placesscreen/escola.png')} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen2/voltar.png')} />
@@ -74,6 +79,11 @@ export default class MainScreen2 extends React.Component {
         </View>
 
         <View style={styles.buttonContainer}>  
+        <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('SchoolMain');
+          }}>
+            <Text style={styles.buttonText}>Escola</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
