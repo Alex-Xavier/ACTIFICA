@@ -41,7 +41,7 @@ const AppNavigator = createStackNavigator ({
   'Colors': {
     screen: Colors,
     navigationOptions: {
-      title: 'Cores'
+      title: 'Cores Primárias'
     }
   },
   'Main1': {
