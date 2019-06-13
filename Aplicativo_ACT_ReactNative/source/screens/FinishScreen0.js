@@ -22,7 +22,13 @@ export default class FinishScreen extends React.Component {
       require('../images/phrasescreen2/estoubem.png'),
       require('../images/phrasescreen2/qualseunome.png'),
       require('../images/phrasescreen2/bomdia.png'),
-      require('../images/phrasescreen2/boanoite.png')
+      require('../images/phrasescreen2/boanoite.png'),
+      require('../images/colorsscreen/amarelo.png'),
+      require('../images/colorsscreen/vermelho.png'),
+      require('../images/colorsscreen/azul.png'),
+      require('../images/colorsscreen/alaranjado.png'),
+      require('../images/colorsscreen/verde.png'),
+      require('../images/colorsscreen/violeta.png')
     ];
     let texts = [
       'Não',
@@ -37,7 +43,13 @@ export default class FinishScreen extends React.Component {
       'Estou bem!',
       'Qual seu nome?',
       'Bom dia!',
-      'Boa noite!'
+      'Boa noite!',
+      'Amarelo',
+      'Vermelho',
+      'Azul',
+      'Alaranjado',
+      'Verde',
+      'Violeta'
     ];
     return (
       <View style={styles.container}>
