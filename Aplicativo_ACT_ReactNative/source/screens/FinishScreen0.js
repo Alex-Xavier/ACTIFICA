@@ -43,7 +43,7 @@ export default class FinishScreen extends React.Component {
       require('../images/numbersscreen/9.png'),
       require('../images/operationsscreen/subtracao.png'),
       require('../images/operationsscreen/soma.png'),
-      require('../images/operationsscreen/multiplicao.png'),
+      require('../images/operationsscreen/multiplicacao.png'),
       require('../images/operationsscreen/divisao.png')
     ];
     let texts = [
