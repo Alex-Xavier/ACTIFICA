@@ -28,7 +28,23 @@ export default class FinishScreen extends React.Component {
       require('../images/colorsscreen/azul.png'),
       require('../images/colorsscreen/alaranjado.png'),
       require('../images/colorsscreen/verde.png'),
-      require('../images/colorsscreen/violeta.png')
+      require('../images/colorsscreen/violeta.png'),
+      require('../images/lettersscreen/ae.png'),
+      require('../images/lettersscreen/fj.png'),
+      require('../images/lettersscreen/ko.png'),
+      require('../images/lettersscreen/pt.png'),
+      require('../images/lettersscreen/uy.png'),
+      require('../images/lettersscreen/z.png'),
+      require('../images/numbersscreen/0.png'),
+      require('../images/numbersscreen/12.png'),
+      require('../images/numbersscreen/34.png'),
+      require('../images/numbersscreen/56.png'),
+      require('../images/numbersscreen/78.png'),
+      require('../images/numbersscreen/9.png'),
+      require('../images/operationsscreen/subtracao.png'),
+      require('../images/operationsscreen/soma.png'),
+      require('../images/operationsscreen/multiplicao.png'),
+      require('../images/operationsscreen/divisao.png')
     ];
     let texts = [
       'Não',
@@ -49,7 +65,23 @@ export default class FinishScreen extends React.Component {
       'Azul',
       'Alaranjado',
       'Verde',
-      'Violeta'
+      'Violeta',
+      'De A até E',
+      'De F até J',
+      'De K até O',
+      'De P até T',
+      'De U até Y',
+      'Letra Z',
+      'Número 0',
+      'Números 1 e 2',
+      'Números 3 e 4',
+      'Números 5 e 6',
+      'Números 7 e 8',
+      'Número 9',
+      'Subtração',
+      'Soma',
+      'Multiplação',
+      'Divisão'
     ];
     return (
       <View style={styles.container}>
