@@ -7,7 +7,6 @@ import {
   Text,
   Dimensions
 } from 'react-native';
-import { ScreenOrientation } from 'expo';
 
 export default class ColorsScreen extends React.Component {
   render() {
@@ -16,13 +15,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 13 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/amarelo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 14 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/vermelho.png')} />
@@ -31,13 +28,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 13 });
           }}>
             <Text style={styles.buttonText}>Amarelo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 14 });
           }}>
             <Text style={styles.buttonText}>Vermelho</Text>
@@ -46,13 +41,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 15 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/azul.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 16 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/alaranjado.png')} />
@@ -61,13 +54,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 15 });
           }}>
             <Text style={styles.buttonText}>Azul</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 16 });
           }}>
             <Text style={styles.buttonText}>Alaranjado</Text>
@@ -76,13 +67,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 17 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/verde.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 18 });
           }}>
             <Image style={styles.cards} source={require('../images/colorsscreen/violeta.png')} />
@@ -91,13 +80,11 @@ export default class ColorsScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 17 });
           }}>
             <Text style={styles.buttonText}>Verde</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish0', { image1: 18 });
           }}>
             <Text style={styles.buttonText}>Violeta</Text>
@@ -131,14 +118,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
     borderColor: '#ff780f',
     borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
