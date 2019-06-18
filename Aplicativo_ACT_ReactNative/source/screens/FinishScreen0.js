@@ -80,7 +80,7 @@ export default class FinishScreen extends React.Component {
       'Número 9',
       'Subtração',
       'Soma',
-      'Multiplação',
+      'Multiplicação',
       'Divisão'
     ];
     return (
