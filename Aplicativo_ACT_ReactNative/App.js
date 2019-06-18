@@ -32,18 +32,16 @@ import Phrase1 from './source/screens/PhraseScreen1';
 import Phrase2 from './source/screens/PhraseScreen2';
 import AfterPeopleVerbs from './source/screens/AfterPeopleVerbsScreen';
 import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
+import SchoolMain from './source/screens/SchoolMainScreen';
+import Letters from './source/screens/LettersScreen';
+import Numbers from './source/screens/NumbersScreen';
 import Colors from './source/screens/ColorsScreen';
+import Operations from './source/screens/OperationsScreen';
 import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
 
 const AppNavigator = createStackNavigator ({
-  'Colors': {
-    screen: Colors,
-    navigationOptions: {
-      title: 'Cores'
-    }
-  },
   'Main1': {
     screen: Main1,
     navigationOptions: {
@@ -63,6 +61,30 @@ const AppNavigator = createStackNavigator ({
     screen: SecondMain,
     navigationOptions: {
       title: 'Menu Querer'
+    }
+  },
+  'SchoolMain': {
+    screen: SchoolMain,
+    navigationOptions: {
+      title: 'Escola'
+    }
+  },
+  'Letters': {
+    screen: Letters,
+    navigationOptions: {
+      title: 'Alfabeto'
+    }
+  },
+  'Numbers': {
+    screen: Numbers,
+    navigationOptions: {
+      title: 'Números'
+    }
+  },
+  'Operations': {
+    screen: Operations,
+    navigationOptions: {
+      title: 'Operações'
     }
   },
   'Action1': {
@@ -225,6 +247,12 @@ const AppNavigator = createStackNavigator ({
     screen: BeforePeopleVerbs,
     navigationOptions: {
       title: 'Verbos'
+    }
+  },
+  'Colors': {
+    screen: Colors,
+    navigationOptions: {
+      title: 'Cores'
     }
   },
   'Finish': {
