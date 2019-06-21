@@ -26,6 +26,7 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "package": "com.actifica.act"
     },
     "description": "Aplicação da Tecnologia da Informação na Facilitação das Comunicações Alternativas\n\nEste projeto nasceu por meio de uma visita técnica á uma escola pública municipal de ensino especial altamente preparada para lecionar e cuidar de pessoas com paralisia cerebral e dentre outras, a Escola Municipal de Educação Especial Vovó Mariquita foi onde pudemos observar, levantar informações e nos motivar a criação de uma aplicação mobile gratuita que atendesse e facilitasse a comunicação entre os instrutores e os instruídos da instituição.",
