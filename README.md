@@ -12,4 +12,4 @@ Este repositório tem como principal objetivo armazenar o código colaborativo d
   - Gabriel Brito
   - Nicolas Almeida
 ### Guia Rápido
-O protótipo do Aplicativo Android desenvolvido em Java está na pasta "Prototipo_Aplicativo_ACT_JAVA", na pasta "Aplicativo_ACT_ReactNative" contém o aplicativo em sua versão de desenvolvimento utilizando o framework React Native. Na aba de "Releases" do GitHub pode ser visto as versões estáveis do aplicativo ACT.
+A pasta "Aplicativo_ACT_ReactNative" contém o aplicativo ACT em desenvolvimento utilizando do framework React Native. Na aba de "Release" do GitHub pode ser visto as versões estáveis do aplicativo ACT que estão publicadas na [Google Play Store](https://play.google.com/store/apps/details?id=com.actifica.act). Na aba de "Branch" do GitHub estão as novas features ou correções de bugs da aplicação sendo desenvolvidas independentemente da master.
