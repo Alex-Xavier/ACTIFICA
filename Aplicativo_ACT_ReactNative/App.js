@@ -5,6 +5,10 @@ import HomeIcon from './source/components/HomeIcon';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
 import SecondMain from './source/screens/SecondMainScreen';
+import InformationApp from './source/screens/InformationAppScreen';
+import Team from './source/screens/TeamScreen';
+import Project from './source/screens/ProjectScreen';
+import Policy from './source/screens/PolicyScreen';
 import Action1 from './source/screens/ActionScreen1';
 import Action2 from './source/screens/ActionScreen2';
 import Action3 from './source/screens/ActionScreen3';
@@ -264,6 +268,18 @@ const HomeNavigator = createStackNavigator ({
 const DrawerNavigator = createDrawerNavigator ({
   'Principal': {
     screen: HomeNavigator
+  },
+  'Sobre o Aplicativo': {
+    screen: InformationApp
+  },
+  'Sobre os Responsáveis': {
+    screen: Team
+  },
+  'Sobre o Projeto': {
+    screen: Project
+  },
+  'Política e Termos': {
+    screen: Policy
   }
 });
 
