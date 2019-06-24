@@ -23,7 +23,8 @@ export default class InformationAppScreen extends React.Component {
             mesmo quando se comunicam com pessoas do seu circulo pessoal mais próximo.
             O aplicativo ACT visa potencializar e dinamizar o processo comunicativo dos
             usuários facilitando o convívio social e aprimorando sua inclusão. ACT é um
-            aplicativo que foi idealizado e fundamentado a partir dos conceitos descritos a baixo:
+            aplicativo grátis e livre ou seja de código-aberto, o mesmo foi idealizado e
+            fundamentado a partir dos conceitos descritos a baixo:
           </Text>
 
           <Text style={styles.titleText}>Comunicação Aumentativa e Alternativa (CAA)</Text>
