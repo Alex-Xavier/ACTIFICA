@@ -15,8 +15,7 @@ export default class MainScreen1 extends React.Component {
       <View style={styles.container}>
 
         <StatusBar
-          backgroundColor='#FFF'
-          barStyle='dark-content'
+          barStyle='light-content'
         />
 
         <View style={styles.cardContainer}>
