@@ -5,7 +5,6 @@ import {
   ScrollView,
   Image,
   Text,
-  Linking,
   Dimensions
 } from 'react-native';
 
