@@ -5,6 +5,7 @@ import {
   ScrollView,
   Image,
   Text,
+  Linking,
   Dimensions
 } from 'react-native';
 
@@ -18,7 +19,7 @@ export default class InformationAppScreen extends React.Component {
         </View>
 
         <View style={styles.textContainer}>
-          <Text>
+          <Text style={styles.text}>
             Pessoas que tem a comunicação afetada tendem a ter dificuldades de expressão,
             mesmo quando se comunicam com pessoas do seu circulo pessoal mais próximo.
             O aplicativo ACT visa potencializar e dinamizar o processo comunicativo dos
@@ -29,7 +30,7 @@ export default class InformationAppScreen extends React.Component {
 
           <Text style={styles.titleText}>Comunicação Aumentativa e Alternativa (CAA)</Text>
           
-          <Text>
+          <Text style={styles.text}>
             CAA é destinada a compensar e facilitar de forma permanente ou não, incapacidades
             e prejuízos em sujeitos com distúrbios da compreensão e comunicação expressiva.
             Utilizada para suprir necessidades comunicativas, complementando ou substituindo
@@ -38,7 +39,7 @@ export default class InformationAppScreen extends React.Component {
 
           <Text style={styles.titleText}>Pranchas de Comunicação</Text>
 
-          <Text>
+          <Text style={styles.text}>
             São recursos que alocam símbolos gráficos, utilizada como ferramenta na
             Comunicação Aumentativa e Alternativa. No projeto ACT as pranchas de comunicação
             utilizam os símbolos gráficos Picture Communication Symbols - PCS, no Brasil
@@ -51,7 +52,7 @@ export default class InformationAppScreen extends React.Component {
 
           <Text style={styles.titleText}>Símbolos de Comunicação Pictórica</Text>
           
-          <Text>
+          <Text style={styles.text}>
             O PCS é um sistema gráfico visual que contém desenhos simples, podendo-se
             acrescentar, na medida do necessário, fotografias, figuras, números, círculos para as
             cores, o alfabeto, outros desenhos ou conjuntos de símbolos. É caracterizado pela
@@ -111,9 +112,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: Dimensions.get('window').height * 0.03,
     backgroundColor: '#FFF'
   },
+  text: {
+    textAlign: 'justify'
+  },
   titleText: {
     fontSize: 16,
     fontWeight: 'bold',
     marginVertical: Dimensions.get('window').height * 0.01
-  }
+  },
 });
