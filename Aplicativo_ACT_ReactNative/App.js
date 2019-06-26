@@ -281,6 +281,10 @@ const DrawerNavigator = createDrawerNavigator ({
   'Política e Termos': {
     screen: Policy
   }
+}, {
+  contentOptions: {
+    activeTintColor: '#f40029'
+  }
 });
 
 const AppDrawerContainer = createAppContainer(DrawerNavigator);
