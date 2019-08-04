@@ -1,7 +1,5 @@
 node_modules/**/*
-npm-debug.*
 *.watchmanconfig
-yarn.*
 *.expo
 *.jks
 *.p12
