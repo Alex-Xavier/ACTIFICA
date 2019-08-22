@@ -1,7 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Dimensions } from 'react-native';
 import { createAppContainer, createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
+import MenuDrawer from './source/components/MenuDrawer';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
 import SecondMain from './source/screens/SecondMainScreen';
@@ -39,6 +40,13 @@ import BeforePeopleVerbs from './source/screens/BeforePeopleVerbsScreen';
 import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
+
+const DrawerConfig = {
+  drawerWidth: Dimensions.get('window').width * 0.75,
+  contentComponent: ({ navigation }) => {
+    return(<MenuDrawer navigation={navigation} />)
+  }
+}
 
 const HomeNavigator = createStackNavigator ({
   'Main1': {
@@ -265,27 +273,26 @@ const HomeNavigator = createStackNavigator ({
   }
 });
 
-const DrawerNavigator = createDrawerNavigator ({
-  'Principal': {
-    screen: HomeNavigator
+const DrawerNavigator = createDrawerNavigator (
+  {
+    'Principal': {
+      screen: HomeNavigator
+    },
+    'Sobre o Aplicativo': {
+      screen: InformationApp
+    },
+    'Sobre os Responsáveis': {
+      screen: Team
+    },
+    'Sobre o Projeto': {
+      screen: Project
+    },
+    'Política e Termos': {
+      screen: Policy
+    }
   },
-  'Sobre o Aplicativo': {
-    screen: InformationApp
-  },
-  'Sobre os Responsáveis': {
-    screen: Team
-  },
-  'Sobre o Projeto': {
-    screen: Project
-  },
-  'Política e Termos': {
-    screen: Policy
-  }
-}, {
-  contentOptions: {
-    activeTintColor: '#f40029'
-  }
-});
+  DrawerConfig
+);
 
 const AppDrawerContainer = createAppContainer(DrawerNavigator);
 
