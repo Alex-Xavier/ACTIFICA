@@ -7,11 +7,14 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import MenuButton from '../components/MenuButton';
 
 export default class InformationAppScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
+
+        <MenuButton navigation={this.props.navigation} />
 
         <View style={styles.imageContainer}>
           <Image style={styles.image} source={require('../images/informationappscreen/act.png')} />
