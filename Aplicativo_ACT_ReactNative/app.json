@@ -1,34 +1,36 @@
 {
   "expo": {
     "name": "ACT",
+    "description": "Aplicação da Tecnologia da Informação na Facilitação das Comunicações Alternativas\n\nEste projeto nasceu por meio de uma visita técnica á uma escola pública municipal de ensino especial altamente preparada para lecionar e cuidar de pessoas com paralisia cerebral e dentre outras, a Escola Municipal de Educação Especial Vovó Mariquita foi onde pudemos observar, levantar informações e nos motivar a criação de uma aplicação mobile gratuita que atendesse e facilitasse a comunicação entre os instrutores e os instruídos da instituição.",
     "slug": "Aplicativo_ACT_ReactNative",
+    "owner": "@alex.xavier",
     "privacy": "public",
     "sdkVersion": "32.0.0",
+    "version": "1.1.0",
     "platforms": [
-      "ios",
       "android"
     ],
-    "version": "1.1.0",
+    "githubUrl": "https://github.com/Alex-Xavier/ACTIFICA",
     "orientation": "portrait",
+    "primaryColor": "#de0d10",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFF"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
+      "enable": false
     },
     "android": {
-      "package": "com.actifica.act"
+      "versionCode": 3,
+      "package": "com.actifica.act",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.actifica.act",
+      "permissions": []
     },
-    "description": "Aplicação da Tecnologia da Informação na Facilitação das Comunicações Alternativas\n\nEste projeto nasceu por meio de uma visita técnica á uma escola pública municipal de ensino especial altamente preparada para lecionar e cuidar de pessoas com paralisia cerebral e dentre outras, a Escola Municipal de Educação Especial Vovó Mariquita foi onde pudemos observar, levantar informações e nos motivar a criação de uma aplicação mobile gratuita que atendesse e facilitasse a comunicação entre os instrutores e os instruídos da instituição.",
-    "githubUrl": "https://github.com/Alex-Xavier/ACTIFICA"
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#7d253b"
+    }
   }
 }
