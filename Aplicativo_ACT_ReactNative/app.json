@@ -12,7 +12,7 @@
     ],
     "githubUrl": "https://github.com/Alex-Xavier/ACTIFICA",
     "orientation": "portrait",
-    "primaryColor": "#de0d10",
+    "primaryColor": "#b80003",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -28,10 +28,10 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.actifica.act",
       "permissions": []
     },
-    "androidStatusBarColor": "#7d253b",
+    "androidStatusBarColor": "#850002",
     "androidStatusBar": {
       "barStyle": "light-content",
-      "backgroundColor": "#7d253b"
+      "backgroundColor": "#850002"
     }
   }
 }
