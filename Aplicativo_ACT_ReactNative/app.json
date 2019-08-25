@@ -20,7 +20,7 @@
       "backgroundColor": "#FFF"
     },
     "updates": {
-      "enable": false
+      "enabled": false
     },
     "android": {
       "versionCode": 3,
