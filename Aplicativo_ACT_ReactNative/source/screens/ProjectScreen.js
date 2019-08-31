@@ -15,7 +15,7 @@ export default class ProjectScreen extends React.Component {
     return (
       <ScrollView style={styles.container}>
 
-      <Header androidStatusBarColor='#850002' style={styles.header} hasText>
+      <Header androidStatusBarColor='#850002' style={styles.header}>
         <Left>
           <Button transparent onPress={() => this.props.navigation.toggleDrawer()}>
             <Icon name='menu' />
