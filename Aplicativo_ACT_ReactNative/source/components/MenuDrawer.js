@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         height: Dimensions.get('window').width * 0.5
     },
     bottomLinks: {   
-        height: Dimensions.get('window').width * 1.22,
+        height: Dimensions.get('window').width * 1.16,
         backgroundColor: '#FFF',
         paddingTop: 10
     },
