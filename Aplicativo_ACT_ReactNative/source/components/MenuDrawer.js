@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     View,
+    ScrollView,
     Text,
     StyleSheet,
     TouchableOpacity,
@@ -19,7 +20,7 @@ export default class MenuDrawer extends React.Component{
     
     render() {
         return(
-            <View styles={styles.continer}>
+            <ScrollView styles={styles.continer}>
                 <View style={styles.topImage}>
                     <Image style={styles.image} source={require('../images/informationappscreen/act.png')} />
                 </View>
@@ -36,7 +37,7 @@ export default class MenuDrawer extends React.Component{
                     <Text style={styles.description}>ACT</Text>
                     <Text style={styles.version}>v1.3.0</Text>
                 </View>
-            </View>
+            </ScrollView>
         );
     }
 }
