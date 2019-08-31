@@ -67,16 +67,16 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.9,
     width: Dimensions.get('window').height * 0.5,
     backgroundColor: '#FFF',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.5,
-    backgroundColor: '#7d253b',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.02

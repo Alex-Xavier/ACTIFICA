@@ -266,7 +266,7 @@ const HomeNavigator = createStackNavigator ({
         <HomeIcon navigation={navigation} />
       ),
       headerStyle: {
-        backgroundColor: '#7d253b'
+        backgroundColor: '#b80003'
       },
       headerTintColor: '#FFF'
     }

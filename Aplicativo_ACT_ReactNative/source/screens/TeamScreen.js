@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#7d253b',
+    color: '#b80003',
     marginTop: Dimensions.get('window').height * 0.025
   },
   photoContainer: {
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   photos: {
     height: Dimensions.get('window').width * 0.3,
     width: Dimensions.get('window').height * 0.17,
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 1,
     borderRadius: 100,
     marginTop: Dimensions.get('window').height * 0.025,
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     marginHorizontal: Dimensions.get('window').height * 0.05
   },
   professionalText: {
-    color: '#7d253b',
+    color: '#b80003',
     marginHorizontal: Dimensions.get('window').height * 0.017
   }
 });
