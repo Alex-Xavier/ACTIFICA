@@ -257,10 +257,7 @@ const HomeNavigator = createStackNavigator ({
   defaultNavigationOptions: ({ navigation }) => {
     return {
       headerTitleStyle: {
-        flexGrow: 1,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        textAlignVertical: 'center'
+        fontWeight: 'bold'
       },
       headerRight: (
         <HomeIcon navigation={navigation} />
