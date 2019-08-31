@@ -7,14 +7,23 @@ import {
   Text,
   Dimensions
 } from 'react-native';
-import HeaderComponent from '../components/HeaderComponent';
+import { Header, Left, Body, Title, Button, Icon } from 'native-base';
 
 export default class InformationAppScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
 
-        <HeaderComponent />
+      <Header androidStatusBarColor='#850002' style={styles.header} hasText>
+        <Left>
+          <Button transparent onPress={() => this.props.navigation.toggleDrawer()}>
+            <Icon name='menu' />
+          </Button>
+        </Left>
+        <Body>
+          <Title style={styles.title}>Sobre o Aplicativo</Title>
+        </Body>
+      </Header>
 
         <View style={styles.imageContainer}>
           <Image style={styles.image} source={require('../images/informationappscreen/act.png')} />
@@ -80,6 +89,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFF'
+  },
+  header: {
+    backgroundColor: '#b80003'
+  },
+  title: {
+    fontWeight: 'bold'
   },
   imageContainer: {
     height: Dimensions.get('window').width * 0.42,
