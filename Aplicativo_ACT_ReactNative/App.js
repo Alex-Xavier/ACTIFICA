@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Dimensions } from 'react-native';
+import { Button, Icon } from 'native-base';
 import { createAppContainer, createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
 import MenuDrawer from './source/components/MenuDrawer';
@@ -53,7 +54,6 @@ const HomeNavigator = createStackNavigator ({
     screen: Main1,
     navigationOptions: {
       title: 'Menu Principal',
-      headerLeft: (<View></View>),
       headerRight: (<View></View>)
     }
   },
@@ -235,22 +235,19 @@ const HomeNavigator = createStackNavigator ({
   'Finish': {
     screen: Finish,
     navigationOptions: {
-      title: 'Sua Frase',
-      headerLeft: (<View></View>)
+      title: 'Sua Frase'
     }
   },
   'Finish0': {
     screen: Finish0,
     navigationOptions: {
-      title: 'Resposta',
-      headerLeft: (<View></View>)
+      title: 'Resposta'
     }
   },
   'Finish1': {
     screen: Finish1,
     navigationOptions: {
-      title: 'Sua Frase',
-      headerLeft: (<View></View>)
+      title: 'Sua Frase'
     }
   }
 }, {
@@ -259,6 +256,11 @@ const HomeNavigator = createStackNavigator ({
       headerTitleStyle: {
         fontWeight: 'bold'
       },
+      headerLeft: (
+        <Button transparent onPress={() => navigation.toggleDrawer()}>
+          <Icon name='menu' style={{color: '#FFF'}} />
+        </Button>
+      ),
       headerRight: (
         <HomeIcon navigation={navigation} />
       ),
