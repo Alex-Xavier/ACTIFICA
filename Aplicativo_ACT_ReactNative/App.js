@@ -42,13 +42,6 @@ import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
 
-const DrawerConfig = {
-  drawerWidth: Dimensions.get('window').width * 0.75,
-  contentComponent: ({ navigation }) => {
-    return(<MenuDrawer navigation={navigation} />)
-  }
-}
-
 const HomeNavigator = createStackNavigator ({
   'Main1': {
     screen: Main1,
@@ -271,6 +264,13 @@ const HomeNavigator = createStackNavigator ({
     }
   }
 });
+
+const DrawerConfig = {
+  drawerWidth: Dimensions.get('window').width * 0.75,
+  contentComponent: ({ navigation }) => {
+    return(<MenuDrawer navigation={navigation} />)
+  }
+}
 
 const DrawerNavigator = createDrawerNavigator (
   {
