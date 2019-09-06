@@ -225,6 +225,30 @@ const HomeNavigator = createStackNavigator ({
       title: 'Verbos'
     }
   },
+  'InformationApp': {
+    screen: InformationApp,
+    navigationOptions: {
+      title: 'Sobre o Aplicativo'
+    }
+  },
+  'Team': {
+    screen: Team,
+    navigationOptions: {
+      title: 'Equipe'
+    }
+  },
+  'Project': {
+    screen: Project,
+    navigationOptions: {
+      title: 'Sobre o Projeto'
+    }
+  },
+  'Policy': {
+    screen: Policy,
+    navigationOptions: {
+      title: 'Política e Termos'
+    }
+  },
   'Finish': {
     screen: Finish,
     navigationOptions: {
@@ -280,7 +304,7 @@ const DrawerNavigator = createDrawerNavigator (
     'Sobre o Aplicativo': {
       screen: InformationApp
     },
-    'Sobre os Responsáveis': {
+    'Sobre a Equipe': {
       screen: Team
     },
     'Sobre o Projeto': {
