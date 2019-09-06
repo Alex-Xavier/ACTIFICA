@@ -234,7 +234,7 @@ const HomeNavigator = createStackNavigator ({
   'Team': {
     screen: Team,
     navigationOptions: {
-      title: 'Equipe'
+      title: 'Sobre a Equipe'
     }
   },
   'Project': {
