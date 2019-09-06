@@ -7,24 +7,11 @@ import {
   Text,
   Dimensions
 } from 'react-native';
-import { Header, Left, Body, Title, Button, Icon } from 'native-base';
 
 export default class TeamScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-
-      <Header androidStatusBarColor='#850002' style={styles.header}>
-        <Left>
-          <Button transparent onPress={() => this.props.navigation.toggleDrawer()}>
-            <Icon name='menu' />
-          </Button>
-        </Left>
-        <Body>
-          <Title style={styles.title}>Sobre os Responsáveis</Title>
-        </Body>
-      </Header>
-
         <View style={styles.titleContainer}>
           <Text style={styles.titleText}>Orientador</Text>
         </View>
@@ -51,18 +38,18 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-            <Text style={styles.nameText}>ALEX XAVIER</Text>
-            <Text style={styles.nameText}>ANA CAROLINA</Text>
+          <Text style={styles.nameText}>ALEX XAVIER</Text>
+          <Text style={styles.nameText}>ANA CAROLINA</Text>
         </View>
 
         <View style={styles.nameContainer}>  
-            <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
-            <Text style={styles.professionalText}>Analista Desenvolvedora</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedora</Text>
         </View>
 
         <View style={styles.photoContainer}>
-            <Image style={styles.photos} source={require('../images/teamscreen/ariel.jpeg')} />
-            <Image style={styles.photos} source={require('../images/teamscreen/euler.jpeg')} />
+          <Image style={styles.photos} source={require('../images/teamscreen/ariel.jpeg')} />
+          <Image style={styles.photos} source={require('../images/teamscreen/euler.jpeg')} />
         </View>
 
         <View style={styles.nameContainer}>  
@@ -71,13 +58,13 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-            <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
-            <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
         </View>
 
         <View style={styles.photoContainer}>
-            <Image style={styles.photos} source={require('../images/teamscreen/fillipe.jpeg')} />
-            <Image style={styles.photos} source={require('../images/teamscreen/gabriel.jpeg')} />
+          <Image style={styles.photos} source={require('../images/teamscreen/fillipe.jpeg')} />
+          <Image style={styles.photos} source={require('../images/teamscreen/gabriel.jpeg')} />
         </View>
 
         <View style={styles.nameContainer}>  
@@ -86,12 +73,12 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-            <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
-            <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
+          <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
         </View>
 
         <View style={styles.photoContainer}>
-            <Image style={styles.photos} source={require('../images/teamscreen/nicolas.jpeg')} />
+          <Image style={styles.photos} source={require('../images/teamscreen/nicolas.jpeg')} />
         </View>
 
         <View style={styles.nameContainer}>  
@@ -101,7 +88,6 @@ export default class TeamScreen extends React.Component {
         <View style={styles.nameContainer}>
           <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
         </View>
-
       </ScrollView>
     );
   }
@@ -111,12 +97,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFF'
-  },
-  header: {
-    backgroundColor: '#b80003'
-  },
-  title: {
-    fontWeight: 'bold'
   },
   titleContainer: {
     flex: 1,

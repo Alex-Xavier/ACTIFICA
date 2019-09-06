@@ -6,24 +6,11 @@ import {
   Text,
   Dimensions
 } from 'react-native';
-import { Header, Left, Body, Title, Button, Icon } from 'native-base';
 
 export default class PolicyScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-
-      <Header androidStatusBarColor='#850002' style={styles.header}>
-        <Left>
-          <Button transparent onPress={() => this.props.navigation.toggleDrawer()}>
-            <Icon name='menu' />
-          </Button>
-        </Left>
-        <Body>
-          <Title style={styles.title}>Política e Termos</Title>
-        </Body>
-      </Header>
-
         <View style={styles.textContainer}>
           <Text style={styles.titleTextPrimary}>Política de Privacidade do Aplicativo ACT</Text>
 
@@ -66,7 +53,6 @@ export default class PolicyScreen extends React.Component {
 
           <Text style={styles.titleTextPrimary}>Belo Horizonte, 21 de junho de 2019.</Text>
         </View>
-
       </ScrollView>
     );
   }
@@ -76,12 +62,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFF'
-  },
-  header: {
-    backgroundColor: '#b80003'
-  },
-  title: {
-    fontWeight: 'bold'
   },
   textContainer: {
     flex: 1,
