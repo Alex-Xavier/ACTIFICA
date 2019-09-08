@@ -38,11 +38,11 @@ export default class MenuDrawer extends React.Component{
         
         <View style={styles.bottomStruct}>
           <View style={styles.bottomIcons}>
-            <Icon name='home' style={styles.icons} />
-            <Icon name='information' style={styles.icons} />
-            <Icon name='information' style={styles.icons} />
-            <Icon name='information' style={styles.icons} />
-            <Icon name='information' style={styles.icons} />
+            <Icon type="FontAwesome" name='home' style={styles.icons} />
+            <Icon type="FontAwesome" name='info-circle' style={styles.icons} />
+            <Icon type="FontAwesome" name='users' style={styles.icons} />
+            <Icon type="FontAwesome" name='graduation-cap' style={styles.icons} />
+            <Icon type="FontAwesome" name='clipboard' style={styles.icons} />
           </View>
           
           <View style={styles.bottomLinks}>
@@ -89,12 +89,12 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   icons: {
-    color: 'gray',
+    color: '#850002',
+    fontSize: 23,
     padding: 8,
     paddingLeft: 14,
     margin: 5,
-    textAlign: 'center',
-    fontSize: 23
+    textAlign: 'center'
   },
   bottomLinks: {
     height: Dimensions.get('window').width * 1.16,
@@ -102,9 +102,9 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   link: {
-    color: 'gray',
+    color: '#850002',
     fontSize: 15,
-    padding: 6,
+    padding: 8,
     margin: 5,
     textAlign: 'left'
   },
@@ -119,12 +119,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 20,
     fontSize: 16,
-    color: 'gray'
+    color: '#850002'
   },
   version: {
     flex: 1,
     textAlign: 'right',
     marginRight: 20,
-    color: 'gray'
+    color: '#850002'
   }
 });
