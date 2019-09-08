@@ -17,13 +17,16 @@ export default class InformationAppScreen extends React.Component {
         </View>
 
         <View style={styles.textContainer}>
+          <Text style={styles.titleText}>Objetivo</Text>
+
           <Text style={styles.text}>
             Pessoas que tem a comunicação afetada tendem a ter dificuldades de expressão,
-            mesmo quando se comunicam com pessoas do seu circulo pessoal mais próximo.
-            O aplicativo ACT visa potencializar e dinamizar o processo comunicativo dos
+            mesmo quando se comunicam com pessoas do seu circulo pessoal mais próximo
+            como pais, parentes, professores, cuidadores e etc.
+            Este aplicativo visa potencializar e dinamizar o processo comunicativo dos
             usuários facilitando o convívio social e aprimorando sua inclusão. ACT é um
             aplicativo grátis e livre ou seja de código-aberto, o mesmo foi idealizado e
-            fundamentado a partir dos conceitos descritos a baixo:
+            fundamentado a partir dos conceitos descritos abaixo:
           </Text>
 
           <Text style={styles.titleText}>Comunicação Aumentativa e Alternativa (CAA)</Text>
@@ -110,11 +113,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   text: {
-    textAlign: 'justify'
+    textAlign: 'justify',
+    color: 'gray'
   },
   titleText: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginVertical: Dimensions.get('window').height * 0.01
+    marginVertical: Dimensions.get('window').height * 0.01,
+    color: 'gray'
   },
 });

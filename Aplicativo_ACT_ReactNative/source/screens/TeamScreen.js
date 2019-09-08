@@ -53,8 +53,8 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-          <Text style={styles.nameText}>ARIEL PEDRO</Text>
-          <Text style={styles.nameText}>EULER MAGNO</Text>
+          <Text style={styles.nameText1}>ARIEL PEDRO</Text>
+          <Text style={styles.nameText1}>EULER MAGNO</Text>
         </View>
 
         <View style={styles.nameContainer}>  
@@ -68,8 +68,8 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-          <Text style={styles.nameText}>FILLIPE AUGUSTO</Text>
-          <Text style={styles.nameText}>GABRIEL BRITO</Text>
+          <Text style={styles.nameText2}>FILLIPE AUGUSTO</Text>
+          <Text style={styles.nameText2}>GABRIEL BRITO</Text>
         </View>
 
         <View style={styles.nameContainer}>  
@@ -104,7 +104,6 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 20,
-    fontWeight: 'bold',
     color: '#b80003',
     marginTop: Dimensions.get('window').height * 0.025
   },
@@ -128,10 +127,19 @@ const styles = StyleSheet.create({
     marginHorizontal: Dimensions.get('window').height * 0.04
   },
   nameText: {
+    color: 'gray',
     marginHorizontal: Dimensions.get('window').height * 0.05
   },
+  nameText1: {
+    color: 'gray',
+    marginHorizontal: Dimensions.get('window').height * 0.06
+  },
+  nameText2: {
+    color: 'gray',
+    marginHorizontal: Dimensions.get('window').height * 0.045
+  },
   professionalText: {
-    color: '#b80003',
+    color: 'gray',
     marginHorizontal: Dimensions.get('window').height * 0.017
   }
 });

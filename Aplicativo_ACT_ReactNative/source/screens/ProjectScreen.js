@@ -25,7 +25,7 @@ export default class ProjectScreen extends React.Component {
             Escola Municipal de Educacão Especial Vovó Mariquita foi onde pudemos observar, levantar
             informações e nos motivar a criação de uma aplicação mobile livre e gratuita que
             atendesse e facilitasse a comunicação entre os instrutores e os instruídos da instituição.
-            Auxiliar as pessoas com déficit em sua expressividade está sendo nosso principal objetivo
+            Auxiliar as pessoas com déficit em sua comunicação está sendo nosso principal objetivo
             desde o nascimento deste projeto e o aplicativo ACT é nosso produto salvador atuando
             como suporte a comunicação destas pessoas e com todo o seu círculo social
             facilitando o convívio e aprimorando sua inclusão.
@@ -61,10 +61,11 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'justify',
+    color: 'gray',
     marginHorizontal: Dimensions.get('window').height * 0.03
   },
   textHyperlink: {
-    color: '#f40029',
+    color: '#b80003',
     textDecorationLine: 'underline',
     marginVertical: Dimensions.get('window').height * 0.02
   }
