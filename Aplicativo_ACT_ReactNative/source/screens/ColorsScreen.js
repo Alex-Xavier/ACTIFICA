@@ -8,86 +8,86 @@ import {
   Dimensions
 } from 'react-native';
 
-export default class MainScreen2 extends React.Component {
+export default class ColorsScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Phrase1');
+            this.props.navigation.navigate('Finish0', { image1: 13 });
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/social.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/amarelo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SecondDearPeople1');
+            this.props.navigation.navigate('Finish0', { image1: 14 });
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/pessoas.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/vermelho.png')} />
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Phrase1');
+            this.props.navigation.navigate('Finish0', { image1: 13 });
           }}>
-            <Text style={styles.buttonText}>Socializar</Text>
+            <Text style={styles.buttonText}>Amarelo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('SecondDearPeople1');
+            this.props.navigation.navigate('Finish0', { image1: 14 });
           }}>
-            <Text style={styles.buttonText}>Pessoas</Text>
+            <Text style={styles.buttonText}>Vermelho</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1', { image0: 78});
+            this.props.navigation.navigate('Finish0', { image1: 15 });
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/eusou.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/azul.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1', { image0: 79});
+            this.props.navigation.navigate('Finish0', { image1: 16 });
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/eunaosou.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/alaranjado.png')} />
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1', { image0: 78});
+            this.props.navigation.navigate('Finish0', { image1: 15 });
           }}>
-            <Text style={styles.buttonText}>Eu sou</Text>
+            <Text style={styles.buttonText}>Azul</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('PeopleFeatures1', { image0: 79});
+            this.props.navigation.navigate('Finish0', { image1: 16 });
           }}>
-            <Text style={styles.buttonText}>Eu não sou</Text>
+            <Text style={styles.buttonText}>Alaranjado</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SchoolMain');
+            this.props.navigation.navigate('Finish0', { image1: 17 });
           }}>
-            <Image style={styles.cards} source={require('../images/placesscreen/escola.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/verde.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('Main1');
+            this.props.navigation.navigate('Finish0', { image1: 18 });
           }}>
-            <Image style={styles.cards} source={require('../images/mainscreen2/voltar.png')} />
+            <Image style={styles.cards} source={require('../images/colorsscreen/violeta.png')} />
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>  
-        <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('SchoolMain');
+          <TouchableOpacity style={styles.button} onPress={() => {
+            this.props.navigation.navigate('Finish0', { image1: 17 });
           }}>
-            <Text style={styles.buttonText}>Escola</Text>
+            <Text style={styles.buttonText}>Verde</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('Main1');
+            this.props.navigation.navigate('Finish0', { image1: 18 });
           }}>
-            <Text style={styles.buttonText}>Voltar</Text>
+            <Text style={styles.buttonText}>Violeta</Text>
           </TouchableOpacity>
         </View>
 
@@ -118,22 +118,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
-    borderColor: '#b80003',
+    borderColor: '#ff780f',
     borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#b80003',
+    backgroundColor: '#ff780f',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#b80003',
+    borderColor: '#ff780f',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017
