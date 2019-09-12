@@ -1,10 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
+import { View, Dimensions } from 'react-native';
+import { Button, Icon } from 'native-base';
+import { createAppContainer, createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import HomeIcon from './source/components/HomeIcon';
+import MenuDrawer from './source/components/MenuDrawer';
 import Main1 from './source/screens/MainScreen1';
 import Main2 from './source/screens/MainScreen2';
 import SecondMain from './source/screens/SecondMainScreen';
+import InformationApp from './source/screens/InformationAppScreen';
+import Team from './source/screens/TeamScreen';
+import Project from './source/screens/ProjectScreen';
+import Policy from './source/screens/PolicyScreen';
 import Action1 from './source/screens/ActionScreen1';
 import Action2 from './source/screens/ActionScreen2';
 import Action3 from './source/screens/ActionScreen3';
@@ -41,12 +47,11 @@ import Finish from './source/screens/FinishScreen';
 import Finish0 from './source/screens/FinishScreen0';
 import Finish1 from './source/screens/FinishScreen1';
 
-const AppNavigator = createStackNavigator ({
+const HomeNavigator = createStackNavigator ({
   'Main1': {
     screen: Main1,
     navigationOptions: {
       title: 'Menu Principal',
-      headerLeft: (<View></View>),
       headerRight: (<View></View>)
     }
   },
@@ -255,47 +260,104 @@ const AppNavigator = createStackNavigator ({
       title: 'Cores'
     }
   },
+  'InformationApp': {
+    screen: InformationApp,
+    navigationOptions: {
+      title: 'Sobre o Aplicativo'
+    }
+  },
+  'Team': {
+    screen: Team,
+    navigationOptions: {
+      title: 'Sobre a Equipe'
+    }
+  },
+  'Project': {
+    screen: Project,
+    navigationOptions: {
+      title: 'Sobre o Projeto'
+    }
+  },
+  'Policy': {
+    screen: Policy,
+    navigationOptions: {
+      title: 'Política e Termos'
+    }
+  },
+  'Colors': {
+    screen: Colors,
+    navigationOptions: {
+      title: 'Cores'
+    }
+  },
   'Finish': {
     screen: Finish,
     navigationOptions: {
-      title: 'Sua Frase',
-      headerLeft: (<View></View>)
+      title: 'Sua Frase'
     }
   },
   'Finish0': {
     screen: Finish0,
     navigationOptions: {
-      title: 'Resposta',
-      headerLeft: (<View></View>)
+      title: 'Resposta'
     }
   },
   'Finish1': {
     screen: Finish1,
     navigationOptions: {
-      title: 'Sua Frase',
-      headerLeft: (<View></View>)
+      title: 'Sua Frase'
     }
   }
 }, {
   defaultNavigationOptions: ({ navigation }) => {
     return {
       headerTitleStyle: {
-        flexGrow: 1,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        textAlignVertical: 'center'
+        fontWeight: 'bold'
       },
+      headerLeft: (
+        <Button transparent onPress={() => navigation.toggleDrawer()}>
+          <Icon name='menu' style={{color: '#FFF'}} />
+        </Button>
+      ),
       headerRight: (
         <HomeIcon navigation={navigation} />
       ),
-      headerStyle:{
-        backgroundColor: '#7d253b'
+      headerStyle: {
+        backgroundColor: '#b80003'
       },
       headerTintColor: '#FFF'
     }
   }
 });
 
-const AppContainer = createAppContainer(AppNavigator);
+const DrawerConfig = {
+  drawerWidth: Dimensions.get('window').width * 0.75,
+  contentComponent: ({ navigation }) => {
+    return(<MenuDrawer navigation={navigation} />)
+  }
+}
 
-export default AppContainer;
+const DrawerNavigator = createDrawerNavigator (
+  {
+    'Principal': {
+      screen: HomeNavigator
+    },
+    'Sobre o Aplicativo': {
+      screen: InformationApp
+    },
+    'Sobre a Equipe': {
+      screen: Team
+    },
+    'Sobre o Projeto': {
+      screen: Project
+    },
+    'Política e Termos': {
+      screen: Policy
+    }
+  },
+  DrawerConfig
+);
+
+const AppDrawerContainer = createAppContainer(DrawerNavigator);
+
+export default AppDrawerContainer;

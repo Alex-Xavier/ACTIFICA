@@ -1,8 +1,6 @@
 node_modules/**/*
-.expo/*
-npm-debug.*
 *.watchmanconfig
-yarn.*
+*.expo
 *.jks
 *.p12
 *.key
