@@ -1,6 +1,7 @@
 node_modules/**/*
 *.watchmanconfig
 *.expo
+*.expo-shared
 *.jks
 *.p12
 *.key
