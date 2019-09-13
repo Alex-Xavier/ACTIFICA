@@ -56,7 +56,7 @@ export default class MenuDrawer extends React.Component{
 
         <View style={styles.footer}>
           <Text style={styles.description}>ACT</Text>
-          <Text style={styles.version}>v1.3.0</Text>
+          <Text style={styles.version}>v1.3.1</Text>
         </View>
       </ScrollView>
     );
