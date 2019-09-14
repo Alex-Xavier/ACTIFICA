@@ -9,14 +9,15 @@
   "dependencies": {
     "@types/react": "^16.8.13",
     "@types/react-native": "^0.57.43",
-    "expo": "^32.0.0",
-    "native-base": "^2.13.5",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-navigation": "^3.6.1"
+    "expo": "^34.0.2",
+    "native-base": "^2.13.8",
+    "react": "^16.9.0",
+    "react-native": "^0.60.5",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^3.12.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.2.0"
   },
   "private": true
 }
