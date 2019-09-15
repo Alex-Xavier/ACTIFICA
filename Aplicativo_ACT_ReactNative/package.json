@@ -7,9 +7,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@types/react": "^16.8.13",
-    "@types/react-native": "^0.57.43",
-    "expo": "^34.0.2",
+    "expo": "^34.0.4",
     "native-base": "^2.13.8",
     "react": "^16.9.0",
     "react-native": "^0.60.5",
