@@ -200,17 +200,17 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.5,
     width: Dimensions.get('window').height * 0.3,
     backgroundColor: '#FFF',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.3,
-    backgroundColor: '#7d253b',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017

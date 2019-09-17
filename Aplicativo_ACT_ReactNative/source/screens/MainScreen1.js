@@ -15,8 +15,8 @@ export default class MainScreen1 extends React.Component {
       <View style={styles.container}>
 
         <StatusBar
-          backgroundColor='#FFF'
-          barStyle='dark-content'
+          barStyle='light-content'
+          androidStatusBarColor='#850002'
         />
 
         <View style={styles.cardContainer}>
@@ -129,17 +129,17 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.367,
     width: Dimensions.get('window').height * 0.367,
     backgroundColor: '#FFF',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.018
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#7d253b',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017
