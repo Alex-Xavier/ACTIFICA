@@ -71,6 +71,149 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.01
   },
+
+  buttonVerde: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#00F0AC',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#00F0AC',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+  buttonAmarelo: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#f0ae00',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#f0ae00',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  buttonLaranja: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#ff780f',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#ff780f',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+buttonAzul: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#7AB3D0',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#7AB3D0',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  cardsVerde: {
+
+    resizeMode: 'contain',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
+    backgroundColor: '#FFF',
+    borderColor: '#00F0AC',
+    borderWidth: 0.5,
+    margin: Dimensions.get('window').height * 0.018
+
+    
+    
+  },
+
+  cardsAmarelo: {
+
+    resizeMode: 'contain',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
+    backgroundColor: '#FFF',
+    borderColor: '#f0ae00',
+    borderWidth: 0.5,
+    margin: Dimensions.get('window').height * 0.018
+
+    
+    
+  },
+
+  cardsAzul: {
+
+    resizeMode: 'contain',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
+    backgroundColor: '#FFF',
+    borderColor: '#7AB3D0',
+    borderWidth: 0.5,
+    margin: Dimensions.get('window').height * 0.018
+
+    
+    
+  },
+
+  cardLaranja: {
+
+    resizeMode: 'contain',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
+    backgroundColor: '#FFF',
+    borderColor: '#ff780f',
+    borderWidth: 0.5,
+    margin: Dimensions.get('window').height * 0.018
+
+    
+   
+  },
   buttonText: {
     color: '#FFF',
     fontWeight: 'bold'

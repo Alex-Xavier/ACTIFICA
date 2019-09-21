@@ -131,10 +131,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
     borderColor: '#00f0ac',
     borderWidth: 0.5,

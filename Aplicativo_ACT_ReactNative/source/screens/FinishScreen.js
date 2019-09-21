@@ -7,6 +7,8 @@ import {
   Image
 } from 'react-native';
 
+import { ScreenOrientation } from 'expo';
+
 export default class FinishScreen extends React.Component {
   render() {
     let images = [
@@ -209,6 +211,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFF',
     justifyContent: 'center'
+    
+    
   },
   cardContainer: {
     height: Dimensions.get('window').width * 0.6,
@@ -233,17 +237,17 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.5,
     width: Dimensions.get('window').height * 0.3,
     backgroundColor: '#FFF',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.3,
-    backgroundColor: '#b80003',
+    backgroundColor: '#7d253b',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017

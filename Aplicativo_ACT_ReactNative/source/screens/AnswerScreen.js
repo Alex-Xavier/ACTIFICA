@@ -51,22 +51,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.58,
     width: Dimensions.get('window').height * 0.58,
     backgroundColor: '#FFF',
-    borderColor: '#c2002a',
+    borderColor: '#7AB3D0',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.01
   },
   button: {
     height: Dimensions.get('window').width * 0.09,
     width: Dimensions.get('window').height * 0.3265,
-    backgroundColor: '#c2002a',
+    backgroundColor: '#7AB3D0',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#c2002a',
+    borderColor: '#7AB3D0',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.01

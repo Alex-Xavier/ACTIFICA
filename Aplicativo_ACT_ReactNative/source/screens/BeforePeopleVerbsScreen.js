@@ -118,22 +118,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
+    
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.018
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#b80003',
+    backgroundColor: '#7d253b',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017

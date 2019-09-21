@@ -131,10 +131,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
     borderColor: '#ff780f',
     borderWidth: 0.5,
@@ -149,6 +148,50 @@ const styles = StyleSheet.create({
     borderColor: '#ff780f',
     borderWidth: 0.5,
     borderRadius: 5,
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  buttonVerde: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#00F0AC',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#00F0AC',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  buttonLaranja: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#ff780f',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#ff780f',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
     margin: Dimensions.get('window').height * 0.017
   },
   buttonText: {

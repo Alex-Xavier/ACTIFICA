@@ -8,24 +8,47 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class MainScreen1 extends React.Component {
+
+
+
+state =
+{
+  orientation: ''
+};
+
+
+
+ComponentVirar()
+{
+        Dimensions.addEventListener('change', ( {window: {width, height} }  )=>
+        {
+              ScreenOrientation.allowAsync('PORTRAIT');
+        });
+}
+
+
+
   render() {
     return (
       <View style={styles.container}>
 
         <StatusBar
-          barStyle='light-content'
-          androidStatusBarColor='#850002'
+          backgroundColor='#FFF'
+          barStyle='dark-content'
         />
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
+
             this.props.navigation.navigate('SecondMain', { image0: 0});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/euquero.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
+
             this.props.navigation.navigate('SecondMain', { image0: 59});
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen1/naoquero.png')} />
@@ -64,7 +87,7 @@ export default class MainScreen1 extends React.Component {
           }}>
             <Text style={styles.buttonText}>Eu estou</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => {
+          <TouchableOpacity style={styles.buttonVerde} onPress={() => {
             this.props.navigation.navigate('PeopleFeatures1', { image0: 61});
           }}>
             <Text style={styles.buttonText}>Não estou</Text>
@@ -106,6 +129,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFF',
+
   },
   cardContainer: {
     height: Dimensions.get('window').width * 0.42,
@@ -124,24 +148,57 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+
+    height: Dimensions.get('window').width * 0.37,
+
+    width: Dimensions.get('window').height * 0.209,
     backgroundColor: '#FFF',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.018
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
+
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#b80003',
+
+
+
+    backgroundColor: '#7d253b',
+
+
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#b80003',
+
+
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  buttonVerde: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#00F0AC',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#00F0AC',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
     margin: Dimensions.get('window').height * 0.017
   },
   buttonText: {

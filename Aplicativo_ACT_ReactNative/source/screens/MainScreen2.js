@@ -67,11 +67,6 @@ export default class MainScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SchoolMain');
-          }}>
-            <Image style={styles.cards} source={require('../images/placesscreen/escola.png')} />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
             <Image style={styles.cards} source={require('../images/mainscreen2/voltar.png')} />
@@ -79,11 +74,6 @@ export default class MainScreen2 extends React.Component {
         </View>
 
         <View style={styles.buttonContainer}>  
-        <TouchableOpacity style={styles.button} onPress={() => {
-            this.props.navigation.navigate('SchoolMain');
-          }}>
-            <Text style={styles.buttonText}>Escola</Text>
-          </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
             this.props.navigation.navigate('Main1');
           }}>
@@ -120,24 +110,74 @@ const styles = StyleSheet.create({
   cards: {
     aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
+
+    height: Dimensions.get('window').width * 0.37,
+
+    width: Dimensions.get('window').height * 0.209,
+
+    
     backgroundColor: '#FFF',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.018
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
+
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#b80003',
+    backgroundColor: '#7d253b',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#b80003',
+    borderColor: '#7d253b',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017
   },
+
+  buttonVerde: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#00F0AC',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#00F0AC',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
+  buttonLaranja: {
+    height: Dimensions.get('window').width * 0.08,
+
+    width: Dimensions.get('window').height * 0.209,
+
+
+
+    backgroundColor: '#ff780f',
+
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+    borderColor: '#ff780f',
+    borderWidth: 0.5,
+    borderRadius: 5,
+
+    
+    margin: Dimensions.get('window').height * 0.017
+  },
+
   buttonText: {
     color: '#FFF',
     fontWeight: 'bold'
