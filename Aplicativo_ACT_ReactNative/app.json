@@ -3,7 +3,7 @@
     "name": "ACT",
     "description": "Aplicação da Tecnologia da Informação na Facilitação das Comunicações Alternativas\n\nEste projeto nasceu por meio de uma visita técnica á uma escola pública municipal de ensino especial altamente preparada para lecionar e cuidar de pessoas com paralisia cerebral e dentre outras, a Escola Municipal de Educação Especial Vovó Mariquita foi onde pudemos observar, levantar informações e nos motivar a criação de uma aplicação mobile gratuita que atendesse e facilitasse a comunicação entre os instrutores e os instruídos da instituição.",
     "slug": "Aplicativo_ACT_ReactNative",
-    "owner": "@alex.xavier",
+    "owner": "alex.xavier",
     "privacy": "public",
     "sdkVersion": "34.0.0",
     "version": "3.3.1",
@@ -20,7 +20,9 @@
       "backgroundColor": "#FFF"
     },
     "updates": {
-      "enabled": false
+      "enabled": false,
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "fallbackToCacheTimeout": 0
     },
     "android": {
       "versionCode": 3,
