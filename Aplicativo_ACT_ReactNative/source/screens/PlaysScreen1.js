@@ -30,13 +30,13 @@ export default class PlaysScreen1 extends React.Component {
         </View>
 
         <View style={styles.buttonContainer}>  
-          <TouchableOpacity style={styles.buttonVerde} onPress={() => {
+          <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: this.props.navigation.state.params.image0, image2: 1} );
           }}>
             <Text style={styles.buttonText}>Assistir tv</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.buttonVerde} onPress={() => {
+          <TouchableOpacity style={styles.button} onPress={() => {
             ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', {image1: this.props.navigation.state.params.image0, image2: 2} );
           }}>
