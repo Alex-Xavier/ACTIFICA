@@ -110,186 +110,36 @@ export default class QueryScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
-    backgroundColor: '#FFF',
-    borderColor: '#c2002a',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
+    borderColor: '#b80003',
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#c2002a',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#c2002a',
+    borderColor: '#b80003',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
-  },
-  buttonVerde: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#00F0AC',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#00F0AC',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-  buttonAmarelo: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#f0ae00',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#f0ae00',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-
-  buttonLaranja: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#ff780f',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#ff780f',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-
-buttonAzul: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#7AB3D0',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#7AB3D0',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-
-  cardsVerde: {
-
-    resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.37,
-    width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
-    borderColor: '#00F0AC',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
-
-    
-    
-  },
-
-  cardsAmarelo: {
-
-    resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.37,
-    width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
-    borderColor: '#f0ae00',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
-
-    
-    
-  },
-
-  cardsAzul: {
-
-    resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.37,
-    width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
-    borderColor: '#7AB3D0',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
-
-    
-    
-  },
-
-  cardLaranja: {
-
-    resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.37,
-    width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
-    borderColor: '#ff780f',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
-
-    
-   
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',
