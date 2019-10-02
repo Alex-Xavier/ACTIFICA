@@ -16,13 +16,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-             
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 23 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/mevestir.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 24 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/deitar.png')} />
@@ -31,13 +31,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 23 });
           }}>
             <Text style={styles.buttonText}>Me vestir</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-           
+            ScreenOrientation.allowAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 24 });
           }}>
             <Text style={styles.buttonText}>Deitar</Text>
@@ -110,33 +110,26 @@ export default class ActionScreen1 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.37,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
     borderColor: '#00f0ac',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -146,54 +139,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#00f0ac',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
-
-  buttonVerde: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#00F0AC',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#00F0AC',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-
-  buttonLaranja: {
-    height: Dimensions.get('window').width * 0.08,
-
-    width: Dimensions.get('window').height * 0.209,
-
-
-
-    backgroundColor: '#ff780f',
-
-
-    justifyContent: 'center',
-    alignItems: 'center',
-
-
-    borderColor: '#ff780f',
-    borderWidth: 0.5,
-    borderRadius: 5,
-
-    
-    margin: Dimensions.get('window').height * 0.017
-  },
-  
   buttonText: {
     color: '#FFF',
     fontWeight: 'bold'

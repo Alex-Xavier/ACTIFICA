@@ -110,33 +110,26 @@ export default class PeopleFeaturesScreen2 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.37,
     width: Dimensions.get('window').height * 0.209,
-    backgroundColor: '#FFF',
     borderColor: '#7ab3d0',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -146,8 +139,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#7ab3d0',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',
