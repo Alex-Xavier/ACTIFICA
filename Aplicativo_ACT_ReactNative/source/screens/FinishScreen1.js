@@ -9,7 +9,7 @@ import {
 
 export default class FinishScreen extends React.Component {
   render() {
-    let images = [
+    const images = [
       require('../images/mainscreen1/euquero.png'),
       require('../images/actionscreen2/ligarpara.png'),
       require('../images/dearpeoplescreen1/mamae.png'),
@@ -71,7 +71,8 @@ export default class FinishScreen extends React.Component {
       ,
       require('../images/mainscreen1/naoquero.png')
     ];
-    let texts = [
+
+    const texts = [
       'Eu quero',
       'ligar para',
       'A mamãe',
@@ -137,31 +138,23 @@ export default class FinishScreen extends React.Component {
       <View style={styles.container}>
 
         <View style={styles.cardContainer}>
-          
           <Image style={styles.cards} source={images[this.props.navigation.state.params.image1]} />
           <Image style={styles.cards} source={images[this.props.navigation.state.params.image2]} />
           <Image style={styles.cards} source={images[this.props.navigation.state.params.image3]} />
-          
         </View>
 
-        <View style={styles.buttonContainer} >
+        <View style={styles.buttonContainer}>
           
-          <View style={styles.button} >
-            
+          <View style={styles.button}>
             <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image1]}</Text>
-          
           </View>
           
-          <View style={styles.button} >
-          
+          <View style={styles.button}>
             <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image2]}</Text>
-          
           </View>
 
-          <View style={styles.button} >
-          
+          <View style={styles.button}>
             <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image3]}</Text>
-          
           </View>
           
         </View>
@@ -174,43 +167,38 @@ export default class FinishScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   cardContainer: {
     height: Dimensions.get('window').width * 0.6,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
+    height: Dimensions.get('window').width * 0.12,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'center'
   },
   cards: {
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.5,
     width: Dimensions.get('window').height * 0.3,
-    backgroundColor: '#FFF',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.017
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.3,
-    backgroundColor: '#7d253b',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.017

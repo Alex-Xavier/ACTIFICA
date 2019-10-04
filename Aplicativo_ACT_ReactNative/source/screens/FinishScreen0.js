@@ -9,7 +9,7 @@ import {
 
 export default class FinishScreen extends React.Component {
   render() {
-    let images = [
+    const images = [
       require('../images/answerscreen/nao.png'),
       require('../images/answerscreen/sim.png'),
       require('../images/phrasescreen1/oi.png'),
@@ -24,7 +24,8 @@ export default class FinishScreen extends React.Component {
       require('../images/phrasescreen2/bomdia.png'),
       require('../images/phrasescreen2/boanoite.png')
     ];
-    let texts = [
+
+    const texts = [
       'Não',
       'Sim',
       'Oi!',
@@ -44,10 +45,8 @@ export default class FinishScreen extends React.Component {
 
         <Image style={styles.cards} source={images[this.props.navigation.state.params.image1]} />
 
-        <View style={styles.button} >
-            
+        <View style={styles.button} > 
           <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image1]}</Text>
-          
         </View>
 
       </View>
@@ -66,17 +65,16 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.9,
     width: Dimensions.get('window').height * 0.5,
-    backgroundColor: '#FFF',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
     width: Dimensions.get('window').height * 0.5,
-    backgroundColor: '#7d253b',
+    backgroundColor: '#b80003',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#7d253b',
+    borderColor: '#b80003',
     borderWidth: 0.5,
     borderRadius: 5,
     margin: Dimensions.get('window').height * 0.02
