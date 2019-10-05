@@ -12,6 +12,7 @@ export default class TeamScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
+        
         <View style={styles.titleContainer}>
           <Text style={styles.titleText}>Orientador</Text>
         </View>
@@ -53,8 +54,8 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-          <Text style={styles.nameText1}>ARIEL PEDRO</Text>
-          <Text style={styles.nameText1}>EULER MAGNO</Text>
+          <Text style={styles.nameText}>ARIEL PEDRO</Text>
+          <Text style={styles.nameText}>EULER MAGNO</Text>
         </View>
 
         <View style={styles.nameContainer}>  
@@ -68,8 +69,8 @@ export default class TeamScreen extends React.Component {
         </View>
 
         <View style={styles.nameContainer}>  
-          <Text style={styles.nameText2}>FILLIPE AUGUSTO</Text>
-          <Text style={styles.nameText2}>GABRIEL BRITO</Text>
+          <Text style={styles.nameText}>FILLIPE AUGUSTO</Text>
+          <Text style={styles.nameText}>GABRIEL BRITO</Text>
         </View>
 
         <View style={styles.nameContainer}>  
@@ -88,6 +89,7 @@ export default class TeamScreen extends React.Component {
         <View style={styles.nameContainer}>
           <Text style={styles.professionalText}>Analista Desenvolvedor</Text>
         </View>
+
       </ScrollView>
     );
   }
@@ -95,8 +97,7 @@ export default class TeamScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#FFF'
+    flex: 1
   },
   titleContainer: {
     flex: 1,
@@ -110,15 +111,10 @@ const styles = StyleSheet.create({
   photoContainer: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center'
-  },
-  nameContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'space-around'
   },
   photos: {
-    height: Dimensions.get('window').width * 0.3,
+    height: Dimensions.get('window').height * 0.17,
     width: Dimensions.get('window').height * 0.17,
     borderColor: '#b80003',
     borderWidth: 1,
@@ -126,17 +122,14 @@ const styles = StyleSheet.create({
     marginTop: Dimensions.get('window').height * 0.025,
     marginHorizontal: Dimensions.get('window').height * 0.04
   },
+  nameContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
   nameText: {
     color: 'gray',
     marginHorizontal: Dimensions.get('window').height * 0.05
-  },
-  nameText1: {
-    color: 'gray',
-    marginHorizontal: Dimensions.get('window').height * 0.06
-  },
-  nameText2: {
-    color: 'gray',
-    marginHorizontal: Dimensions.get('window').height * 0.045
   },
   professionalText: {
     color: 'gray',
