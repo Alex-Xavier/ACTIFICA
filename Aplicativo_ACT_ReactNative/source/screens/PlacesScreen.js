@@ -16,13 +16,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 14 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/casa.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 15 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/escola.png')} />
@@ -31,13 +31,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 14 });
           }}>
             <Text style={styles.buttonText}>A casa</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 15 });
           }}>
             <Text style={styles.buttonText}>A escola</Text>
@@ -46,13 +46,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 16 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/parque.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 17 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/cinema.png')} />
@@ -61,13 +61,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 16 });
           }}>
             <Text style={styles.buttonText}>O parque</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 17 });
           }}>
             <Text style={styles.buttonText}>O cinema</Text>
@@ -76,13 +76,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 18 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/piscina.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 19 });
           }}>
             <Image style={styles.cards} source={require('../images/placesscreen/quintal.png')} />
@@ -91,13 +91,13 @@ export default class PlacesScreen extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 18 });
           }}>
             <Text style={styles.buttonText}>A piscina</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: 13, image3: 19 });
           }}>
             <Text style={styles.buttonText}>O quintal</Text>
