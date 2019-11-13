@@ -6,9 +6,11 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class PolicyScreen extends React.Component {
   render() {
+    ScreenOrientation.lockAsync('PORTRAIT');
     return (
       <ScrollView style={styles.container}>
         

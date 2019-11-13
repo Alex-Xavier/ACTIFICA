@@ -7,9 +7,11 @@ import {
   Text,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class MainScreen1 extends React.Component {
   render() {
+    ScreenOrientation.lockAsync('PORTRAIT');
     return (
       <View style={styles.container}>
 
