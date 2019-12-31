@@ -5,7 +5,7 @@
     "slug": "Aplicativo_ACT_ReactNative",
     "owner": "@alex.xavier",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
+    "sdkVersion": "36.0.0",
     "version": "3.3.1",
     "platforms": [
       "android"
