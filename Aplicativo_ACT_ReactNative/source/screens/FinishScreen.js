@@ -4,10 +4,14 @@ import {
   View,
   Text,
   Dimensions,
-  Image
+  Image,
+  BackHandler
 } from 'react-native';
 
 export default class FinishScreen extends React.Component {
+  /*componentWillMount = () => {
+    BackHandler.addEventListener('hardwareBackPress', () => true);
+  }*/
   render() {
     const images = [
       require('../images/mainscreen1/euquero.png'),

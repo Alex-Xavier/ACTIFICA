@@ -8,11 +8,14 @@ import {
   Dimensions
 } from 'react-native';
 import { ScreenOrientation } from 'expo';
+//import { AndroidBackHandler } from 'react-navigation-backhandler';
 
 export default class MainScreen1 extends React.Component {
+  //onBackButtonPressAndroid = () => false;
   render() {
     ScreenOrientation.lockAsync('PORTRAIT');
     return (
+      /*<AndroidBackHandler onBackPress={this.onBackButtonPressAndroid}>*/
       <View style={styles.container}>
 
         <View style={styles.cardContainer}>
@@ -94,6 +97,7 @@ export default class MainScreen1 extends React.Component {
         </View>
 
       </View>
+      /*</AndroidBackHandler>*/
     );
   }
 }
