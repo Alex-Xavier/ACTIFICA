@@ -16,13 +16,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 17});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/lavarorosto.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 18});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/cortarasunhas.png')} />
@@ -31,13 +31,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 17});
           }}>
             <Text style={styles.buttonText}>Lavar o rosto</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 18});
           }}>
             <Text style={styles.buttonText}>Cortar as unhas</Text>
@@ -46,13 +46,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 19});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/mesecar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 20});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/desodorante.png')} />
@@ -61,13 +61,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 19});
           }}>
             <Text style={styles.buttonText}>Me secar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 20});
           }}>
             <Text style={styles.buttonText}>O desodorante</Text>
@@ -76,13 +76,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 21});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/pentearocabelo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 22});
           }}>
             <Image style={styles.cards} source={require('../images/hygienescreen2/daradescarga.png')} />
@@ -91,13 +91,13 @@ export default class HygieneScreen2 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 21});
           }}>
             <Text style={styles.buttonText}>Pentear o cabelo</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 22});
           }}>
             <Text style={styles.buttonText}>Dar a descarga</Text>
@@ -112,33 +112,26 @@ export default class HygieneScreen2 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
-    backgroundColor: '#FFF',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     borderColor: '#ff780f',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -148,8 +141,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#ff780f',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',

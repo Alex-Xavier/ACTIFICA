@@ -16,13 +16,13 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 62 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen1/bonito.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 63 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen1/feliz.png')} />
@@ -31,13 +31,13 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 62 });
           }}>
             <Text style={styles.buttonText}>Bonito(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 63 });
           }}>
             <Text style={styles.buttonText}>Feliz</Text>
@@ -46,13 +46,13 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 64 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen1/alegre.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 65 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen1/engracado.png')} />
@@ -61,13 +61,13 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 64 });
           }}>
             <Text style={styles.buttonText}>Alegre</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 65 });
           }}>
             <Text style={styles.buttonText}>Engraçado(a)</Text>
@@ -76,7 +76,7 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 66 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen1/legal.png')} />
@@ -90,7 +90,7 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 66 });
           }}>
             <Text style={styles.buttonText}>Legal</Text>
@@ -110,33 +110,26 @@ export default class PeopleFeaturesScreen1 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
-    backgroundColor: '#FFF',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     borderColor: '#7ab3d0',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -146,8 +139,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#7ab3d0',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',

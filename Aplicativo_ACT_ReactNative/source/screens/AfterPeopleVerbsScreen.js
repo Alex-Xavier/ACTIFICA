@@ -45,31 +45,25 @@ export default class AfterPeopleVerbsScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#FFF',
-    alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.58,
-    width: Dimensions.get('window').height * 0.58,
-    backgroundColor: '#FFF',
+    width: Dimensions.get('window').height * 0.35,
     borderColor: '#00f0ac',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.01
+    borderWidth: 0.5
   },
   button: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 0.3265,
+    height: Dimensions.get('window').width * 0.08,
+    width: Dimensions.get('window').height * 0.35,
     backgroundColor: '#00f0ac',
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: '#00f0ac',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.01
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',

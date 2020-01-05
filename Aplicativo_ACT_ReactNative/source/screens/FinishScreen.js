@@ -4,12 +4,28 @@ import {
   View,
   Text,
   Dimensions,
-  Image
+  Image,
+  BackHandler
 } from 'react-native';
 
 export default class FinishScreen extends React.Component {
+  /*O método abaixo é responsável por impedir que o botão 'Back' funcione nesta tela pois
+  * caso ele fique habilitado e o usuário o utilize o navigation volta a tela anterior
+  * em modo horizontal assim distorcendo o layout da tela.
+  */
+  componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', () => {
+      if (!this.props.navigation.isFocused()) {
+        // Se a tela não estiver renderizada não faça nada
+        return false;
+      } else {
+        // A tela estando renderizada retorna `true` impedindo o botão 'Back'
+        return true
+      }
+    });
+  }
   render() {
-    let images = [
+    const images = [
       require('../images/mainscreen1/euquero.png'),
       require('../images/playsscreen1/assistirtv.png'),
       require('../images/playsscreen1/ouvirmusica.png'),
@@ -91,7 +107,8 @@ export default class FinishScreen extends React.Component {
       require('../images/mainscreen2/eusou.png'),
       require('../images/mainscreen2/eunaosou.png')
     ];
-    let texts = [
+    
+    const texts = [
       'Eu quero',
       'assistir tv!',
       'ouvir música!',
@@ -177,24 +194,18 @@ export default class FinishScreen extends React.Component {
       <View style={styles.container}>
 
         <View style={styles.cardContainer}>
-          
           <Image style={styles.cards} source={images[this.props.navigation.state.params.image1]} />
           <Image style={styles.cards} source={images[this.props.navigation.state.params.image2]} />
-          
         </View>
 
-        <View style={styles.buttonContainer} >
+        <View style={styles.buttonContainer}>
           
-          <View style={styles.button} >
-            
+          <View style={styles.button}>
             <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image1]}</Text>
-          
           </View>
           
-          <View style={styles.button} >
-          
+          <View style={styles.button}>
             <Text style={styles.buttonText}>{texts[this.props.navigation.state.params.image2]}</Text>
-          
           </View>
           
         </View>
@@ -207,32 +218,27 @@ export default class FinishScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   cardContainer: {
     height: Dimensions.get('window').width * 0.6,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
+    height: Dimensions.get('window').width * 0.12,
     width: Dimensions.get('window').height * 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'center'
   },
   cards: {
     resizeMode: 'contain',
     height: Dimensions.get('window').width * 0.5,
     width: Dimensions.get('window').height * 0.3,
-    backgroundColor: '#FFF',
     borderColor: '#b80003',
     borderWidth: 0.5,
     margin: Dimensions.get('window').height * 0.017

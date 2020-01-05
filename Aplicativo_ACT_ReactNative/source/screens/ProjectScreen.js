@@ -8,11 +8,14 @@ import {
   Linking,
   Dimensions
 } from 'react-native';
+import { ScreenOrientation } from 'expo';
 
 export default class ProjectScreen extends React.Component {
   render() {
+    ScreenOrientation.lockAsync('PORTRAIT');
     return (
       <ScrollView style={styles.container}>
+        
         <View style={styles.imageContainer}>
           <Image style={styles.image} source={require('../images/informationappscreen/act.png')} />
         </View>
@@ -35,6 +38,7 @@ export default class ProjectScreen extends React.Component {
             Para saber mais acesse nossa Webpage!
           </Text>
         </View>
+
       </ScrollView>
     );
   }
@@ -42,14 +46,12 @@ export default class ProjectScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#FFF'
+    flex: 1
   },
   imageContainer: {
     height: Dimensions.get('window').width * 0.45,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF'
+    justifyContent: 'center'
   },
   image: {
     resizeMode: 'contain',

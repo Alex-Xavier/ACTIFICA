@@ -16,13 +16,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 23 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/mevestir.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 24 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/deitar.png')} />
@@ -31,13 +31,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 23 });
           }}>
             <Text style={styles.buttonText}>Me vestir</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 24 });
           }}>
             <Text style={styles.buttonText}>Deitar</Text>
@@ -46,13 +46,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 25 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/levantar.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 26 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/dormir.png')} />
@@ -61,13 +61,13 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 25 });
           }}>
             <Text style={styles.buttonText}>Levantar</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 26 });
           }}>
             <Text style={styles.buttonText}>Dormir</Text>
@@ -76,7 +76,7 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 27 });
           }}>
             <Image style={styles.cards} source={require('../images/actionscreen1/sentar.png')} />
@@ -90,7 +90,7 @@ export default class ActionScreen1 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish', { image1: this.props.navigation.state.params.image0, image2: 27 });
           }}>
             <Text style={styles.buttonText}>Sentar</Text>
@@ -110,33 +110,26 @@ export default class ActionScreen1 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
-    backgroundColor: '#FFF',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     borderColor: '#00f0ac',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -146,8 +139,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#00f0ac',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',

@@ -5,7 +5,7 @@
     "slug": "Aplicativo_ACT_ReactNative",
     "owner": "alex.xavier",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
+    "sdkVersion": "36.0.0",
     "version": "3.3.1",
     "platforms": [
       "android"
@@ -30,10 +30,10 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.actifica.act",
       "permissions": []
     },
-    "androidStatusBarColor": "#850002",
+    "androidStatusBarColor": "#a30003",
     "androidStatusBar": {
       "barStyle": "light-content",
-      "backgroundColor": "#850002"
+      "backgroundColor": "#a30003"
     }
   }
 }

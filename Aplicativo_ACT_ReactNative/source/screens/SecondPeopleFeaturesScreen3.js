@@ -16,13 +16,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 32 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/calmo.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 33 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/ansioso.png')} />
@@ -31,13 +31,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 32 });
           }}>
             <Text style={styles.buttonText}>Calmo(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 33 });
           }}>
             <Text style={styles.buttonText}>Ansioso(a)</Text>
@@ -46,13 +46,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 34 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/inocente.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 35 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/justo.png')} />
@@ -61,13 +61,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 34 });
           }}>
             <Text style={styles.buttonText}>Tranquilo(a)</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 35 });
           }}>
             <Text style={styles.buttonText}>Justo(a)</Text>
@@ -76,13 +76,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.cardContainer}>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 36 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/forte.png')} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 37 });
           }}>
             <Image style={styles.cards} source={require('../images/peoplefeaturesscreen3/indeciso.png')} />
@@ -91,13 +91,13 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 
         <View style={styles.buttonContainer}>  
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 36 });
           }}>
             <Text style={styles.buttonText}>Forte</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => {
-            ScreenOrientation.allowAsync('LANDSCAPE');
+            ScreenOrientation.lockAsync('LANDSCAPE');
             this.props.navigation.navigate('Finish1', { image1: this.props.navigation.state.params.image1, image2: this.props.navigation.state.params.image2, image3: 37 });
           }}>
             <Text style={styles.buttonText}>Indeciso(a)</Text>
@@ -112,33 +112,26 @@ export default class PeopleFeaturesScreen3 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    justifyContent: 'center'
   },
   cardContainer: {
-    height: Dimensions.get('window').width * 0.42,
-    width: Dimensions.get('window').height * 1,
+    flex: 4,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   buttonContainer: {
-    height: Dimensions.get('window').width * 0.09,
-    width: Dimensions.get('window').height * 1,
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: Dimensions.get('window').height * 0.04,
-    backgroundColor: '#FFF'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   cards: {
-    aspectRatio: 1,
     resizeMode: 'contain',
-    height: Dimensions.get('window').width * 0.367,
-    width: Dimensions.get('window').height * 0.367,
-    backgroundColor: '#FFF',
+    height: Dimensions.get('window').width * 0.37,
+    width: Dimensions.get('window').height * 0.209,
     borderColor: '#7ab3d0',
-    borderWidth: 0.5,
-    margin: Dimensions.get('window').height * 0.018
+    borderWidth: 0.5
   },
   button: {
     height: Dimensions.get('window').width * 0.08,
@@ -148,8 +141,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#7ab3d0',
     borderWidth: 0.5,
-    borderRadius: 5,
-    margin: Dimensions.get('window').height * 0.017
+    borderRadius: 5
   },
   buttonText: {
     color: '#FFF',
