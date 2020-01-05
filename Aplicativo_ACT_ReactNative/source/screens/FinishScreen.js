@@ -9,9 +9,21 @@ import {
 } from 'react-native';
 
 export default class FinishScreen extends React.Component {
-  /*componentWillMount = () => {
-    BackHandler.addEventListener('hardwareBackPress', () => true);
-  }*/
+  /*O método abaixo é responsável por impedir que o botão 'Back' funcione nesta tela pois
+  * caso ele fique habilitado e o usuário o utilize o navigation volta a tela anterior
+  * em modo horizontal assim distorcendo o layout da tela.
+  */
+  componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', () => {
+      if (!this.props.navigation.isFocused()) {
+        // Se a tela não estiver renderizada não faça nada
+        return false;
+      } else {
+        // A tela estando renderizada retorna `true` impedindo o botão 'Back'
+        return true
+      }
+    });
+  }
   render() {
     const images = [
       require('../images/mainscreen1/euquero.png'),
