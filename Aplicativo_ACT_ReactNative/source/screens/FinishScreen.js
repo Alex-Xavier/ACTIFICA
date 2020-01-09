@@ -20,7 +20,7 @@ export default class FinishScreen extends React.Component {
         return false;
       } else {
         // A tela estando renderizada retorna `true` impedindo o botão 'Back'
-        return true
+        return true;
       }
     });
   }
