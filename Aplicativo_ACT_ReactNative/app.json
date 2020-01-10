@@ -16,7 +16,7 @@
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#FFF"
     },
     "updates": {
@@ -28,7 +28,12 @@
       "versionCode": 4,
       "package": "com.actifica.act",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.actifica.act",
-      "permissions": []
+      "permissions": [],
+      "splash": {
+        "mdpi": "./assets/splash.png",
+        "resizeMode": "native",
+        "backgroundColor": "#FFF"
+      }
     },
     "androidStatusBarColor": "#a30003",
     "androidStatusBar": {
