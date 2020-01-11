@@ -1,4 +1,6 @@
 node_modules/**/*
+*.expo
+*.vscode
 *.watchmanconfig
 *.expo
 *.expo-shared
