@@ -34,7 +34,7 @@ export default class ProjectScreen extends React.Component {
             facilitando o convívio e aprimorando sua inclusão.
           </Text>
 
-          <Text style={styles.textHyperlink} onPress={() => Linking.openURL('http://www.actifica.com')}>
+          <Text style={styles.textHyperlink} onPress={() => Linking.openURL('https://sites.google.com/view/projetoactifica')}>
             Para saber mais acesse nossa Webpage!
           </Text>
         </View>
