@@ -1,0 +1,9 @@
+node_modules
+.expo
+.expo-shared
+.vscode
+.watchmanconfig
+.jks
+.p12
+.key
+.mobileprovision
