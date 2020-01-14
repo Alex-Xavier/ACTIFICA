@@ -1,9 +1,21 @@
+# gitignore para a biblioteca React Native + Expo
+# website: https://facebook.github.io/react-native/
+
+# Pasta Node
 node_modules
+
+# website: https://expo.io/
+# Pastas ocultas temporárias do Expo
 *.expo
 *.expo-shared
+
+# website: https://code.visualstudio.com/
+# Arquivo oculto temporário do VSCode
 *.vscode
+
+# website: https://facebook.github.io/watchman/
+# Arquivo oculto temporário do Watchman
 *.watchmanconfig
+
+# Arquivo de chave identificadora de publicação
 *.jks
-*.p12
-*.key
-*.mobileprovision
